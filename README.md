@@ -54,5 +54,5 @@ No geral, esta aplicação tem o potencial de revolucionar a forma como as pesso
 [![Site Institucional](https://img.shields.io/badge/Site_Institucional-ECECEC?style=for-the-badge&logo=twitter&logoColor=white)](https://www.canva.com/design/DAGMDaOrnrE/ws7_5rqVnqWyT8okN2TXig/edit)
 
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://github.com/chininha-03/GymLog/blob/117c268f1ff95eea7c9f2491cd039f92ae4f2c4e/site-react/public/logo-gym-ultra.png)
 
