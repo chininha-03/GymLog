@@ -52,6 +52,7 @@ No geral, esta aplicação tem o potencial de revolucionar a forma como as pesso
 [![FigmaApp](https://img.shields.io/badge/Figma_App-FF7A00?style=for-the-badge&logo)](https://www.figma.com/design/BagaO5lKTBjfxoLuxHq58B/Untitled?node-id=0-1&t=IRJgG03hjjHAWffG-0)
 [![FigmaSite](https://img.shields.io/badge/Figma_Site-000?style=for-the-badge&logo)](https://www.figma.com/design/UoYwLaZ3P790uA8bBqFOYq/Untitled?node-id=0-1&t=Y7MRoGIdjpBlU9im-0)
 [![Site Institucional](https://img.shields.io/badge/Site_Institucional-ECECEC?style=for-the-badge&logo=twitter&logoColor=white)](https://www.canva.com/design/DAGMDaOrnrE/ws7_5rqVnqWyT8okN2TXig/edit)
+[![Sistema Operacional Figma](https://img.shields.io/badge/Sistema_Operacional_Figma-00933B?style=for-the-badge&logo=twitter&logoColor=white)](https://www.figma.com/design/mfDayXONTvPwQuHZYvbXYr/Untitled?node-id=0-1&t=vKO4z6JtvBPh3yB1-0)
 
 
 ![Logo](https://github.com/chininha-03/GymLog/blob/117c268f1ff95eea7c9f2491cd039f92ae4f2c4e/site-react/public/logo-gym-ultra.png)
