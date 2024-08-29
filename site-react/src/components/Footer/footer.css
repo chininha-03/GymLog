@@ -1,0 +1,60 @@
+.footerMaster{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+    color: #fff;
+}
+
+.footerMaster ul{
+    list-style: none;
+    margin: 60px;
+}
+
+.primeiraLista a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.primeiraLista h2{
+    padding: 0 0 60px 0;
+    
+}
+
+.primeiraLista h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.primeiraLista li{
+    text-align: center;
+    margin: 5px;
+}
+
+.segundaLista h2{
+    padding: 0 0 60px 0;
+}
+
+.segundaLista ul{
+    text-align: center;
+    align-items: end;
+}
+
+.segundaLista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    height: 150px;
+}
+
+.primeiraLista .btn-outline-secondary{
+    background: #ff9040;
+}
+
+.letraCor button{
+    color: black;
+}
