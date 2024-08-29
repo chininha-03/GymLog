@@ -3,6 +3,9 @@ import * as ReactDOM from 'react-dom/client'
 import Home from './routes/Home'
 import './index.css'
 
+import "bootstrap/dist/css/bootstrap.min.css"
+import 'bootstrap-icons/font/bootstrap-icons.css'
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,11 +14,11 @@ import App from './App';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    // path: "/",
+    // element: <App />,
     // errorElement: ,
     children:[
-      {path: "/", element: <Home />},
+      {path: "/", element: <App />},
 
     ]
   },
