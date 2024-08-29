@@ -4,6 +4,8 @@ const Pege2 = () => {
     <div>
       <h1>hello world, novamente</h1>
       <h2>Hello world</h2>
+      <h2>Hello world</h2>
+      <h2>Hello world</h2>
     </div>
   )
 }
