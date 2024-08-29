@@ -1,3 +1,4 @@
+/* Ajustando a div master */
 .footerMaster{
     background-color: black;
     display: flex;
@@ -7,54 +8,66 @@
     color: #fff;
 }
 
+/* Tirando o estilo da lista */
 .footerMaster ul{
     list-style: none;
     margin: 60px;
 }
 
+/* Tirando o estilo do Link */
 .primeiraLista a{
     text-decoration: none;
     color: #fff;
 }
 
+/* Ajustando o espaçamento do SubTítulo */
 .primeiraLista h2{
     padding: 0 0 60px 0;
     
 }
 
+/* Ajustando o espaçamento do SubTítulo */
 .primeiraLista h3{
     text-align: center;
     padding-bottom: 10px;
 }
 
+/* Ajustando a Cada item da Lista */
 .primeiraLista li{
     text-align: center;
     margin: 5px;
 }
 
+/* Ajustando o título da segunda lista */
 .segundaLista h2{
     padding: 0 0 60px 0;
 }
 
+/* Ajustando a segunda lista */
 .segundaLista ul{
     text-align: center;
     align-items: end;
 }
 
+/* Ajuste geral na lista */
 .segundaLista{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+/* Definindo o tamanho da logo */
 .logo{
     height: 150px;
 }
 
+/* Ajustando os botões das redes sociais */
 .primeiraLista .btn-outline-secondary{
     background: #ff9040;
 }
 
+
 .letraCor button{
     color: black;
 }
+/* ------------------------------------ */
