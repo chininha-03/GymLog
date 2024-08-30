@@ -11,7 +11,7 @@ function App() {
   return (
       <div>
        <Outlet />
-        <Footer />
+        {/* <Footer /> */}
 
       </div>
   )
