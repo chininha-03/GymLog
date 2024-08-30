@@ -8,13 +8,11 @@ const Page3 = () => {
   return (
     <div className="masterAntes">
       <div className="logooo">
-        {" "}
         <img src={logo} alt="Logo GymLog" />
-      </div>{" "}
-      <div className="divMaster" >
-        <div className="img">
-          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia"/>
-          {/* <div className="iconsSetas">
+      </div>
+      <div className="divMaster">
+        <img src={mulherAcademia} alt="Imagem de mulher fazendo academia" />
+        {/* <div className="iconsSetas">
           <a href="#">
           <i className="bi bi-chevron-left"></i>
           </a>
@@ -22,7 +20,6 @@ const Page3 = () => {
           <i className="bi bi-chevron-right"></i>
           </a>
           </div> */}
-        </div>
         <div className="conteudoText">
           <h6>
             Nosso aplicativo aborda o <br />
@@ -40,32 +37,20 @@ const Page3 = () => {
           <h4>
             O aplicativo Gym Log se destaca pela fusão <br /> inovadora de
             tecnologia <br />
-            avançada e expertise em fitness,<br /> apoiado por um modelo de
-            negócios <br />
+            avançada e expertise em fitness,
+            <br /> apoiado por um modelo de negócios <br />
             sustentável através de compras <br /> integradas e parcerias com{" "}
             <br />
             profissionais da área.
           </h4>
-          <h1>TO FICANDOOOO LOUCOOO</h1>
         </div>
       </div>
-      <div
-        className="iconsSetas"
-        style={{
-          margin: "10px 0 0 0",
-          display: "flex",
-          justifyContent: "space-between",
-          fontSize: "30px",
-          fontWeight: "110px",
-          color: "black",
-        }}
-      >
+      <div className="iconsSetas">
         <div
           style={{
             paddingLeft: "30px",
           }}
         >
-          {" "}
           <a href="#" style={{ color: "black" }}>
             <i className="bi bi-chevron-left"></i>
           </a>
