@@ -23,9 +23,9 @@
   height: 350px;
   width: 250px;
   border-radius: 10px;
-  -webkit-box-shadow:-4px 14px 10px 5px rgba(62,66,66,0.22);
-  -moz-box-shadow: -4px 14px 10px 5px rgba(62,66,66,0.22);
-  box-shadow: -4px 14px 10px 5px rgba(62,66,66,0.22);
+  -webkit-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  -moz-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
 }
 
 .conteudoText {
@@ -37,13 +37,12 @@
   font-weight: 400;
   font-size: 17px;
   padding-right: 50px;
-  text-shadow: rgba(62,66,66,0.26) -17px 5px 8px;
+  text-shadow: rgba(62, 66, 66, 0.26) -17px 5px 8px;
 }
 
 .conteudoText h4 {
   font-size: 22px;
-  text-shadow: rgba(62,66,66,0.26) -17px 5px 8px;
-  
+  text-shadow: rgba(62, 66, 66, 0.26) -17px 5px 8px;
 }
 
 .img {
@@ -58,8 +57,17 @@
   text-decoration: none;
   color: #000;
 }
-    .logooo{
-        width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    }
+.logooo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconsSetas {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 110px;
+  color: black;
+}

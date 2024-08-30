@@ -5,6 +5,7 @@
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
 }
 .sobrecolor{
 
@@ -16,6 +17,7 @@ background-color: blacks;
     background: #ff9040;
     color: black;
     width: 280px;
+    height: 40px;
 }
 .bw h1{
     padding: 40px;
