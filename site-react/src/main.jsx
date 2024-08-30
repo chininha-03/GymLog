@@ -11,9 +11,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Page3 from './routes/page3/pege3'
 import Page4 from './routes/page4/page4'
 import Page5 from './routes/page5/page5'
+import Page3 from './routes/page3/pege3'
 
 const router = createBrowserRouter([
   {
