@@ -13,7 +13,7 @@ const Page3 = () => {
       </div>{" "}
       <div className="divMaster">
         <div className="img">
-          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia" />
+          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia"/>
           {/* <div className="iconsSetas">
           <a href="#">
           <i className="bi bi-chevron-left"></i>
