@@ -1,7 +1,6 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../assets/logo.svg"
-
+import logo from "../../assets/logo.svg";
 
 const Footer = () => {
   return (
@@ -13,26 +12,26 @@ const Footer = () => {
           <h3>Fale conosco</h3>
           <li className="mb-3">
             <a href="#" className="letraCor">
-            <button className="btn btn-outline-secondary w-100 ">
-            <i class="bi bi-instagram p-2"></i>
-             INSTAGRAM
-            </button>
+              <button className="btn btn-outline-secondary w-100 ">
+                <i class="bi bi-instagram p-2"></i>
+                INSTAGRAM
+              </button>
             </a>
           </li>
           <li className="mb-3">
-          <a href="#" className="letraCor">
-            <button className="btn btn-outline-secondary w-100 ">
-            <i class="bi bi-twitter-x p-2 center"></i>
-            TWITTER
-            </button>
+            <a href="#" className="letraCor">
+              <button className="btn btn-outline-secondary w-100 ">
+                <i class="bi bi-twitter-x p-2 center"></i>
+                TWITTER
+              </button>
             </a>
           </li>
           <li className="mb-3 ">
-          <a href="#" className="letraCor">
-            <button className="btn btn-outline-secondary w-100 ">
-            <i class="bi bi-facebook p-2 "></i>
-             FACEBOOK
-            </button>
+            <a href="#" className="letraCor">
+              <button className="btn btn-outline-secondary w-100 ">
+                <i class="bi bi-facebook p-2 "></i>
+                FACEBOOK
+              </button>
             </a>
           </li>
         </ul>
@@ -58,7 +57,6 @@ const Footer = () => {
           <li>
             <a href="#">Política e Privacidade</a>
           </li>
-          
         </ul>
       </div>
     </div>
