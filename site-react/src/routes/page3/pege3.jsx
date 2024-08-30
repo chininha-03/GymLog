@@ -11,9 +11,9 @@ const Page3 = () => {
         {" "}
         <img src={logo} alt="Logo GymLog" />
       </div>{" "}
-      <div className="divMaster" >
+      <div className="divMaster">
         <div className="img">
-          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia"/>
+          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia" />
           {/* <div className="iconsSetas">
           <a href="#">
           <i className="bi bi-chevron-left"></i>
@@ -40,13 +40,12 @@ const Page3 = () => {
           <h4>
             O aplicativo Gym Log se destaca pela fusão <br /> inovadora de
             tecnologia <br />
-            avançada e expertise em fitness,<br /> apoiado por um modelo de
-            negócios <br />
+            avançada e expertise em fitness,
+            <br /> apoiado por um modelo de negócios <br />
             sustentável através de compras <br /> integradas e parcerias com{" "}
             <br />
             profissionais da área.
           </h4>
-          <h1>TO FICANDOOOO LOUCOOO</h1>
         </div>
       </div>
       <div
