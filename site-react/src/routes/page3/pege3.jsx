@@ -11,7 +11,7 @@ const Page3 = () => {
         {" "}
         <img src={logo} alt="Logo GymLog" />
       </div>{" "}
-      <div className="divMaster">
+      <div className="divMaster" >
         <div className="img">
           <img src={mulherAcademia} alt="Imagem de mulher fazendo academia"/>
           {/* <div className="iconsSetas">
