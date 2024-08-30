@@ -40,7 +40,7 @@ const Page3 = () => {
           <h4>
             O aplicativo Gym Log se destaca pela fusão <br /> inovadora de
             tecnologia <br />
-            avançada e expertise em fitness, <br /> apoiado por um modelo de
+            avançada e expertise em fitness,<br /> apoiado por um modelo de
             negócios <br />
             sustentável através de compras <br /> integradas e parcerias com{" "}
             <br />
