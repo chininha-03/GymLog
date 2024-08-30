@@ -2,18 +2,18 @@ import React from "react";
 import "./pege3.css";
 
 import logo from "../../assets/logo.svg";
-import mulherAcademia from "../../assets/mulherAcademia.jpg"
+import mulherAcademia from "../../assets/mulherAcademia.jpg";
 
 const Page3 = () => {
   return (
     <div className="masterAntes">
-    <div className="logooo">  <img src={logo} alt="Logo GymLog" />
-    </div>     <div className="divMaster">
+      <div className="logooo">
+        {" "}
+        <img src={logo} alt="Logo GymLog" />
+      </div>{" "}
+      <div className="divMaster">
         <div className="img">
-          <img
-            src={mulherAcademia}
-            alt="Imagem de mulher fazendo academia"
-          />
+          <img src={mulherAcademia} alt="Imagem de mulher fazendo academia" />
           {/* <div className="iconsSetas">
           <a href="#">
           <i className="bi bi-chevron-left"></i>
@@ -59,16 +59,25 @@ const Page3 = () => {
           color: "black",
         }}
       >
-      <div style={{
-        paddingLeft: "30px"
-      }}>  <a href="#" style={{ color: "black" }}>
-          <i className="bi bi-chevron-left"></i>
-        </a></div>
-        <div style={{
-        paddingRight: "30px"
-      }}><a href="#" style={{ color: "black" }}>
-          <i className="bi bi-chevron-right"></i>
-        </a></div>
+        <div
+          style={{
+            paddingLeft: "30px",
+          }}
+        >
+          {" "}
+          <a href="#" style={{ color: "black" }}>
+            <i className="bi bi-chevron-left"></i>
+          </a>
+        </div>
+        <div
+          style={{
+            paddingRight: "30px",
+          }}
+        >
+          <a href="#" style={{ color: "black" }}>
+            <i className="bi bi-chevron-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   );
