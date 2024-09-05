@@ -1,5 +1,5 @@
 import "./page4.css";
-import logo from "../../../public/img/logo.png";
+import logo from "/img/logo.png";
 import { Link } from "react-router-dom";
 
 const Page4 = () => {
