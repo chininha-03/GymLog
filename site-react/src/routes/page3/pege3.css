@@ -1,10 +1,23 @@
 .masterAntes {
-  display: flex;
-  flex-direction: column;
-  background-color: #e5d3ac;
-  height: 100vh;
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: #e5d3ac;
+  height: 100vh; */
 }
-
+.content{
+  height: 95vh;
+  background-color: #e5d3ac;
+ padding-top: 120px;
+}
+.iii{
+  height: 350px;
+  width: 250px;
+  margin-left: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  -moz-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+}
 .masterAntes img {
   max-width: fit-content;
   max-height: fit-content;
@@ -29,8 +42,8 @@
 }
 
 .conteudoText {
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
 }
 
 .conteudoText h6 {
@@ -70,4 +83,26 @@
   font-size: 30px;
   font-weight: 110px;
   color: black;
+}
+.kkk{
+  display: flex;
+  justify-content: space-between;
+background-color: #e5d3ac;
+margin-top: 180px;
+}                                                     
+.kkk i{
+  color: #ff9040;
+ 
+ font-size: xx-large;
+}
+.fundinhi{
+  background-image: url('../../assets/mulherAcademia.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center
+  ;
+  align-items: center;
 }
