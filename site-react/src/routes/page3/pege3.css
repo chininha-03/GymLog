@@ -7,7 +7,7 @@
 .content{
   height: 95vh;
   background-color: #e5d3ac;
- padding-top: 120px;
+ /* padding-top: 120px; */
 }
 .iii{
   height: 350px;
@@ -100,9 +100,28 @@ margin-top: 180px;
   background-size: cover; 
   background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(10px);
   display: flex;
-  justify-content: center
-  ;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
   align-items: center;
 }
+
+
+.fundinhi h4{
+  z-index: 2;
+color: black; 
+backdrop-filter: blur(5px);
+width: 100%;
+height: 200vh;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .pltr{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
