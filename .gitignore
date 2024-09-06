@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/GymLogAPI/GymLog/obj
+/GymLogAPI/GymLog/bin/Debug/net8.0
+/GymLogAPI/GymLog/.vs
+/.vs
