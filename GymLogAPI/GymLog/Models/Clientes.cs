@@ -9,6 +9,10 @@ namespace GymLog.Models
         [Required(ErrorMessage = "O campo Nome é obrigatório.")]
         [Display(Name = "Nome")]
         public string ClienteName { get; set; }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30098fe9b986adf415bc08beb4a1731a7317ac8d
         [Required(ErrorMessage = "O campo Data de Nascimento é obrigatório.")]
         [Display(Name = "Data de Nascimento")]
         public DateOnly DataNasciemnto { get; set; }
