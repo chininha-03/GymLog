@@ -11,7 +11,7 @@ namespace GymLog.Models
         public string ClienteName { get; set; }
 
         [Required(ErrorMessage = "O campo 'Data de Nascimento' é obrigatório.")]
-        [Display(Name = "Data de Nascimento")]
+        [Display(Name = "Data de Nascimento")]                                          
         public DateOnly DataNasciemnto { get; set; }
 
         [Display(Name = "Data de cadastro")]
