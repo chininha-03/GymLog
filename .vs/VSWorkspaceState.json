@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GymLogAPI",
+    "\\GymLogAPI\\GymLog"
   ],
-  "SelectedNode": "\\C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog",
+  "SelectedNode": "\\GymLogAPI\\GymLog\\GymLog.sln",
   "PreviewInSolutionExplorer": false
 }
