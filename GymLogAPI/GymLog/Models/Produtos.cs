@@ -5,7 +5,7 @@ namespace GymLog.Models
     public class Produtos
     {
 
-        public Guid ProdutoId { get; set; }
+        public Guid ProdutosId { get; set; }
 
         [Required(ErrorMessage = "O campo 'Nome do Produto' é obrigatório.")]
         [Display(Name = "Nome do Produto")]
