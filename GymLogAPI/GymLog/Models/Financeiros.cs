@@ -4,7 +4,7 @@ namespace GymLog.Models
 {
     public class Financeiros
     {
-        public Guid FinanceiroId { get; set; }
+        public Guid FinanceirosId { get; set; }
 
         [Required(ErrorMessage = "O campo 'Lucros do Mês Anterior' é obrigatório.")]
         [Display(Name = "Lucro do mês anterior")]
