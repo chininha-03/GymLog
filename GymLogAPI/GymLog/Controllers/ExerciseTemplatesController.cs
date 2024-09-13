@@ -100,6 +100,19 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
+        [HttpGet("filtrar/{nome}")]
+        public async Task<IActionResult> BuscarNome(string nome)
+        {
+            // Criar um filtro por nome na tabela Clientes
+            var listaExer = _context.ExerciseTemplate.Where(c => c.Title.Contains(nome)).ToList();
+            if (listaExer.Count > 0)
+            {
+                return Ok(listaExer);
+            }
+            return NotFound(nome);
+        }
+
+
         private bool ExerciseTemplateExists(long id)
         {
             return _context.ExerciseTemplate.Any(e => e.Id == id);
