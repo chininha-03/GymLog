@@ -4,6 +4,7 @@ using GymLog.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymLog.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240913140612_Tabela")]
+    partial class Tabela
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,8 +38,8 @@ namespace GymLog.Migrations
                     b.Property<DateTime?>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DataNasciemnto")
-                        .HasColumnType("datetime2");
+                    b.Property<DateOnly>("DataNasciemnto")
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .IsRequired()
