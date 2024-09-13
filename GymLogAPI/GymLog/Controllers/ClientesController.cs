@@ -107,7 +107,7 @@ namespace GymLog.Controllers
     //    }
     //}
 
-    [Authorize]
+ 
     [Route("api/[controller]")]
     [ApiController]
     public class ClientesController : ControllerBase
