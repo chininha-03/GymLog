@@ -4,7 +4,7 @@ namespace GymLog.Models
 {
     public class Clientes
     {
-        public Guid ClienteId { get; set; }
+        public Guid ClientesId { get; set; }
 
         [Required(ErrorMessage = "O campo 'Nome' é obrigatório.")]
         [Display(Name = "Nome")]
@@ -12,10 +12,10 @@ namespace GymLog.Models
 
         [Required(ErrorMessage = "O campo 'Data de Nascimento' é obrigatório.")]
         [Display(Name = "Data de Nascimento")]                                          
-        public DateOnly DataNasciemnto { get; set; }
+        public DateTime DataNasciemnto { get; set; }
 
         [Display(Name = "Data de cadastro")]
-        public DateOnly DataCadastro { get; set; }
+        public DateTime? DataCadastro { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "O campo 'Sexo' é obrigatório.")]
         [Display(Name = "Sexo")]
@@ -25,9 +25,8 @@ namespace GymLog.Models
         [Display(Name = "Peso (KG)")]
         public int  Peso { get; set; }
 
-        [Required(ErrorMessage = "O campo 'Nível de Atividade' é obrigatório.")]
         [Display(Name = "Nível de Atividade")]
-        public string NivelAtividade { get; set; }
+        public string? NivelAtividade { get; set; }
 
         [Required(ErrorMessage = "O campo 'Email' é obrigatório.")]
         [EmailAddress(ErrorMessage = "O campo Email é inválido")]
