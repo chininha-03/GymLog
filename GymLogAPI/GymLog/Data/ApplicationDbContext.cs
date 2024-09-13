@@ -27,5 +27,16 @@ namespace GymLog.Data
             builder.Entity<Financeiros>().ToTable("Financeiros");
             builder.Entity<Pagamentos>().ToTable("Pagamentos");
         }
+        public DbSet<GymLog.Models.DeletedWorkout> DeletedWorkout { get; set; } = default!;
+        public DbSet<GymLog.Models.ExerciseTemplate> ExerciseTemplate { get; set; } = default!;
+        public DbSet<GymLog.Models.FolderRoutines> FolderRoutines { get; set; } = default!;
+        public DbSet<GymLog.Models.PaginatedWorkoutEvents> PaginatedWorkoutEvents { get; set; } = default!;
+        public DbSet<GymLog.Models.Routine> Routine { get; set; } = default!;
+        public DbSet<GymLog.Models.RoutineFolder> RoutineFolder { get; set; } = default!;
+        public DbSet<GymLog.Models.RoutinesExercises> RoutinesExercises { get; set; } = default!;
+        public DbSet<GymLog.Models.RoutinesExercisesBody> RoutinesExercisesBody { get; set; } = default!;
+        public DbSet<GymLog.Models.RoutinesSets> RoutinesSets { get; set; } = default!;
+        public DbSet<GymLog.Models.UpdatedWorkout> UpdatedWorkout { get; set; } = default!;
+        public DbSet<GymLog.Models.Workout> Workout { get; set; } = default!;
     }
 }
