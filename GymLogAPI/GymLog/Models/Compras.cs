@@ -4,7 +4,7 @@ namespace GymLog.Models
 {
     public class Compras
     {
-        public Guid CompraId { get; set; }
+        public Guid ComprasId { get; set; }
 
         [Required(ErrorMessage = "O campo 'Horário da Compra' é obrigatório.")]
         [Display(Name = "Horário da Compra")]
