@@ -4,7 +4,7 @@ namespace GymLog.Models
 {
     public class Pagamentos
     {
-        public Guid PagamentoId { get; set; }
+        public Guid PagamentosId { get; set; }
 
         
 

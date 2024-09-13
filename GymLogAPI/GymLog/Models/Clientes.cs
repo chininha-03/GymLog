@@ -4,7 +4,7 @@ namespace GymLog.Models
 {
     public class Clientes
     {
-        public Guid ClienteId { get; set; }
+        public Guid ClientesId { get; set; }
 
         [Required(ErrorMessage = "O campo 'Nome' é obrigatório.")]
         [Display(Name = "Nome")]
@@ -15,7 +15,7 @@ namespace GymLog.Models
         public DateOnly DataNasciemnto { get; set; }
 
         [Display(Name = "Data de cadastro")]
-        public DateOnly DataCadastro { get; set; }
+        public DateTime? DataCadastro { get; set; } = DateTime.Now;
 
         [Required(ErrorMessage = "O campo 'Sexo' é obrigatório.")]
         [Display(Name = "Sexo")]
@@ -33,6 +33,7 @@ namespace GymLog.Models
         [EmailAddress(ErrorMessage = "O campo Email é inválido")]
         [Display(Name = "Email")]
         public string Email { get; set; }
+        public bool? CadastroAtivo { get; set; } = true;
 
     }
 
