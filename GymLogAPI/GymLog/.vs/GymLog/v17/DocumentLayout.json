@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\routinefolderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\routinefolderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\models\\exercisetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:models\\exercisetemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\exercisetemplatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\exercisetemplatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\routinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\routinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\models\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:models\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\vendascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\controllers\\pagamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:controllers\\pagamentoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\models\\routinefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:models\\routinefolder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|c:\\users\\sesi3\\desktop\\gymlog1\\gymlog\\gymlogapi\\gymlog\\models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF2DCD5A-1B0E-48F9-9B02-54558E0D41D6}|GymLog.csproj|solutionrelative:models\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoutineFoldersController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\RoutineFoldersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoutineFoldersController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\RoutineFoldersController.cs",
+              "RelativeToolTip": "Controllers\\RoutineFoldersController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAtwFAAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:29:12.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExerciseTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\ExerciseTemplate.cs",
+              "RelativeDocumentMoniker": "Models\\ExerciseTemplate.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\ExerciseTemplate.cs",
+              "RelativeToolTip": "Models\\ExerciseTemplate.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:28:25.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExerciseTemplatesController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ExerciseTemplatesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ExerciseTemplatesController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ExerciseTemplatesController.cs",
+              "RelativeToolTip": "Controllers\\ExerciseTemplatesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:27:39.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoutinesController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\RoutinesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoutinesController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\RoutinesController.cs",
+              "RelativeToolTip": "Controllers\\RoutinesController.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAuwHAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:24:13.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAYwHUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:19:26.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Vendas.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\Vendas.cs",
+              "RelativeDocumentMoniker": "Models\\Vendas.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\Vendas.cs",
+              "RelativeToolTip": "Models\\Vendas.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:18:07.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VendasController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\VendasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VendasController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\VendasController.cs",
+              "RelativeToolTip": "Controllers\\VendasController.cs",
+              "ViewState": "AQIAAHcAAAAAAAAAAAAqwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:13:39.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PagamentosController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\PagamentosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagamentosController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Controllers\\PagamentosController.cs",
+              "RelativeToolTip": "Controllers\\PagamentosController.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T19:08:51.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RoutineFolder.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutineFolder.cs",
+              "RelativeDocumentMoniker": "Models\\RoutineFolder.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutineFolder.cs",
+              "RelativeToolTip": "Models\\RoutineFolder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:30:23.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\Clientes.cs",
+              "RelativeDocumentMoniker": "Models\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\Desktop\\GymLog1\\GymLog\\GymLogAPI\\GymLog\\Models\\Clientes.cs",
+              "RelativeToolTip": "Models\\Clientes.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:20:14.381Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

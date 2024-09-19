@@ -25,7 +25,21 @@ namespace GymLog.Data
             builder.Entity<Vendas>().ToTable("Vendas");
             builder.Entity<ItensVendas>().ToTable("ItensVenda");
             builder.Entity<Financeiros>().ToTable("Financeiros");
+            builder.Entity<Compras>().ToTable("Compras");
+            builder.Entity<DeletedWorkout>().ToTable("DeletedWorkout");
+            builder.Entity<Workout>().ToTable("Workout");
+            builder.Entity<ExerciseTemplate>().ToTable("ExerciseTemplate");
+            builder.Entity<FolderRoutines>().ToTable("FolderRoutines");
+            builder.Entity<PaginatedWorkoutEvents>().ToTable("PaginatedWorkoutEvents");
+            builder.Entity<Routine>().ToTable("Routine");
+            builder.Entity<RoutineFolder>().ToTable("RoutineFolder");
+            builder.Entity<RoutinesExercises>().ToTable("RoutinesExercises");
+            builder.Entity<RoutinesExercisesBody>().ToTable("RoutinesExercisesBody");
+            builder.Entity<RoutinesSets>().ToTable("RoutinesSets");
+            builder.Entity<UpdatedWorkout>().ToTable("UpdatedWorkout");
             builder.Entity<Pagamentos>().ToTable("Pagamentos");
+
+
         }
         public DbSet<GymLog.Models.DeletedWorkout> DeletedWorkout { get; set; } = default!;
         public DbSet<GymLog.Models.ExerciseTemplate> ExerciseTemplate { get; set; } = default!;
