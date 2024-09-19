@@ -1,5 +1,5 @@
 import "./page4.css";
-import logo from "../../../public/img/logo.png";
+import logo from "/img/logo.png";
 import { Link } from "react-router-dom";
 
 const Page4 = () => {
@@ -20,8 +20,8 @@ const Page4 = () => {
           </h1>
         </div>
         <div className="mud">
-       <Link to={"infoAi"}><div className="left"><i class="bi bi-chevron-left"></i></div> </Link>  
-       <Link to={"saibamais"}> <div className="right"><i class="bi bi-chevron-right"></i></div></Link> 
+       <Link to={"/infoAi"}><div className="left"><i class="bi bi-chevron-left"></i></div> </Link>  
+       <Link to={"/saibamais"}> <div className="right"><i class="bi bi-chevron-right"></i></div></Link> 
         </div>
       </div>
     </>

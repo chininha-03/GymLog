@@ -1,0 +1,127 @@
+.masterAntes {
+  /* display: flex;
+  flex-direction: column; */
+  /* background-color: #e5d3ac;
+  height: 100vh; */
+}
+.content{
+  height: 95vh;
+  background-color: #e5d3ac;
+ /* padding-top: 120px; */
+}
+.iii{
+  height: 350px;
+  width: 250px;
+  margin-left: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  -moz-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+}
+.masterAntes img {
+  max-width: fit-content;
+  max-height: fit-content;
+  align-items: end;
+}
+
+.divMaster {
+  display: flex;
+  margin: 100px 50px 0 50px;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 100%;
+}
+
+.divMaster img {
+  height: 350px;
+  width: 250px;
+  border-radius: 10px;
+  -webkit-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  -moz-box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+  box-shadow: -4px 14px 10px 5px rgba(62, 66, 66, 0.22);
+}
+
+.conteudoText {
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.conteudoText h6 {
+  font-weight: 400;
+  font-size: 17px;
+  padding-right: 50px;
+  text-shadow: rgba(62, 66, 66, 0.26) -17px 5px 8px;
+}
+
+.conteudoText h4 {
+  font-size: 22px;
+  text-shadow: rgba(62, 66, 66, 0.26) -17px 5px 8px;
+}
+
+.img {
+  display: flex;
+  flex-direction: column;
+}
+
+.img a {
+  font-size: x-large;
+  font-weight: bolder;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #000;
+}
+.logooo {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.iconsSetas {
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 110px;
+  color: black;
+}
+.kkk{
+  display: flex;
+  justify-content: space-between;
+background-color: #e5d3ac;
+margin-top: 180px;
+}                                                     
+.kkk i{
+  color: #ff9040;
+ 
+ font-size: xx-large;
+}
+.fundinhi{
+  background-image: url('../../assets/mulherAcademia.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+}
+
+
+.fundinhi h4{
+  z-index: 2;
+color: black; 
+backdrop-filter: blur(5px);
+width: 100%;
+height: 200vh;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .pltr{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
