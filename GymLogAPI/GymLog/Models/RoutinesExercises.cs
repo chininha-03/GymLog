@@ -2,9 +2,10 @@
 {
     public class RoutinesExercises
     {
-        public long Id { get; set; }
+        public Guid RoutinesExercisesId { get; set; }
         public string NotesExercises { get; set; }
         public int RestSeconds { get; set; }
-        public long RoutinesSetId { get; set; }
+        public Guid RoutinesSetsId { get; set; }
+        public RoutinesSets RoutinesSets { get; set; }
     }
 }

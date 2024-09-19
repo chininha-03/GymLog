@@ -2,7 +2,7 @@
 {
     public class DeletedWorkout
     {
-        public long Id { get; set; }
+        public Guid DeletedWorkoutId { get; set; }
         public DateTime DeletedAt { get; set; }
     }
 }
