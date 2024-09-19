@@ -2,13 +2,15 @@
 {
     public class RoutinesExercisesBody
     {
-        public long Id { get; set; }
+        public Guid RoutinesExercisesBodyId { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
         public bool IsPrivate { get; set; }
-        public long RoutinesSetId { get; set; }
-        public long RoutinesExerciseId { get; set; }
+        public Guid RoutinesSetId { get; set; }
+        public RoutinesSets RoutinesSets { get; set; }
+        public Guid RoutinesExercisesId { get; set; }
+        public RoutinesExercises RoutinesExercises { get; set; }
     }
 }
