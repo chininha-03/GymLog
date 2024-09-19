@@ -1,0 +1,19 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/GymLogAPI/GymLog/.vs
+/GymLogAPI/GymLog/obj
+<<<<<<< HEAD
+/GymLogAPI/GymLog/obj/Debug/net8.0/GymLog.AssemblyInfoInputs.cache
+/GymLogAPI/GymLog/obj/Debug/net8.0/GymLog.AssemblyInfo.cs
+=======
+/GymLogAPI/GymLog/bin
+/GymLogAPI/.vs
+
+>>>>>>> chininha
+/GymLogAPI/GymLog/obj/Debug/net8.0/GymLog.AssemblyInfoInputs.cache
+/GymLogAPI/GymLog/.vs/GymLog/v17/.suo
+/GymLogAPI/GymLog/obj/Debug/net8.0/GymLog.AssemblyInfoInputs.cache
+/GymLogAPI/GymLog/obj/Debug/net8.0/GymLog.AssemblyInfoInputs.cache
