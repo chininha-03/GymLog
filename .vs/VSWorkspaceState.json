@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\GymLog",
+    "\\API\\GymLog\\Controllers",
+    "\\GymLogAPI",
+    "\\GymLogAPI\\GymLog"
+  ],
+  "SelectedNode": "\\GymLogAPI\\GymLog\\GymLog.csproj.user",
+  "PreviewInSolutionExplorer": false
+}
