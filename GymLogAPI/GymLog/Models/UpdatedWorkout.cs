@@ -2,7 +2,7 @@
 {
     public class UpdatedWorkout
     {
-        public long Id { get; set; }
+        public Guid UpdatedWorkoutId { get; set; }
         public long WorkoutId { get; set; }
     }
 }
