@@ -6,6 +6,7 @@ namespace GymLog.Models
     {
         public Guid UserId { get; set; }
 
+        [Display(Name = "Modo de usuário")]
         public bool ModeUser { get; set; }
 
         [Required(ErrorMessage = "O campo 'Nome' é obrigatório.")]
