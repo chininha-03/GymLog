@@ -28,12 +28,7 @@ namespace GymLog.Models
 
         [Required(ErrorMessage = "O campo 'Tipo de conjunto' é obrigatório.")]
         [Display(Name = "Tipo de conjunto")]
-        public Guid RoutinesSetId { get; set; }
-        public RoutinesSets RoutinesSets { get; set; }
-
-        [Required(ErrorMessage = "O campo 'Tipo de conjunto' é obrigatório.")]
-        [Display(Name = "Tipo de conjunto")]
-         public Guid RoutinesExerciseId { get; set; }
+         public Guid RoutinesExercisesId { get; set; }
         public RoutinesExercises RoutinesExercises { get; set; }
     }
 }

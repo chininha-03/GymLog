@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GymLog.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class popi : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -56,16 +56,58 @@ namespace GymLog.Migrations
                 {
                     ClientesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ClienteName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DataNasciemnto = table.Column<DateOnly>(type: "date", nullable: false),
+                    DataNasciemnto = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Sexo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Peso = table.Column<int>(type: "int", nullable: false),
-                    NivelAtividade = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NivelAtividade = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Clientes", x => x.ClientesId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Compras",
+                columns: table => new
+                {
+                    ComprasId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    HorarioCompra = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Quantidade = table.Column<int>(type: "int", nullable: false),
+                    Preco = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Compras", x => x.ComprasId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DeletedWorkout",
+                columns: table => new
+                {
+                    DeletedWorkoutId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    DeletedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DeletedWorkout", x => x.DeletedWorkoutId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ExerciseTemplate",
+                columns: table => new
+                {
+                    ExerciseTemplateId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PrimaryMuscleGroup = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    SecondaryMuscleGroups = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsCustom = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ExerciseTemplate", x => x.ExerciseTemplateId);
                 });
 
             migrationBuilder.CreateTable(
@@ -83,6 +125,18 @@ namespace GymLog.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "FolderRoutines",
+                columns: table => new
+                {
+                    FolderRoutinesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_FolderRoutines", x => x.FolderRoutinesId);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Pagamentos",
                 columns: table => new
                 {
@@ -94,6 +148,20 @@ namespace GymLog.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Pagamentos", x => x.PagamentosId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PaginatedWorkoutEvents",
+                columns: table => new
+                {
+                    PaginatedWorkoutEventsId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Page = table.Column<int>(type: "int", nullable: false),
+                    PageCount = table.Column<int>(type: "int", nullable: false),
+                    Events = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PaginatedWorkoutEvents", x => x.PaginatedWorkoutEventsId);
                 });
 
             migrationBuilder.CreateTable(
@@ -110,6 +178,64 @@ namespace GymLog.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Produtos", x => x.ProdutosId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Routine",
+                columns: table => new
+                {
+                    RoutineId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Exercises = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Routine", x => x.RoutineId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RoutineFolder",
+                columns: table => new
+                {
+                    RoutineFolderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Index = table.Column<int>(type: "int", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoutineFolder", x => x.RoutineFolderId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RoutinesSets",
+                columns: table => new
+                {
+                    RoutinesSetsId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Reps = table.Column<int>(type: "int", nullable: false),
+                    Peso = table.Column<int>(type: "int", nullable: false),
+                    SetType = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoutinesSets", x => x.RoutinesSetsId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Workout",
+                columns: table => new
+                {
+                    WorkoutId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StartTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EndTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Exercises = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Workout", x => x.WorkoutId);
                 });
 
             migrationBuilder.CreateTable(
@@ -241,6 +367,26 @@ namespace GymLog.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "RoutinesExercises",
+                columns: table => new
+                {
+                    RoutinesExercisesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    NotesExercises = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RestSeconds = table.Column<int>(type: "int", nullable: false),
+                    RoutinesSetsId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoutinesExercises", x => x.RoutinesExercisesId);
+                    table.ForeignKey(
+                        name: "FK_RoutinesExercises_RoutinesSets_RoutinesSetsId",
+                        column: x => x.RoutinesSetsId,
+                        principalTable: "RoutinesSets",
+                        principalColumn: "RoutinesSetsId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ItensVenda",
                 columns: table => new
                 {
@@ -264,6 +410,29 @@ namespace GymLog.Migrations
                         column: x => x.VendasId,
                         principalTable: "Vendas",
                         principalColumn: "VendasId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RoutinesExercisesBody",
+                columns: table => new
+                {
+                    RoutinesExercisesBodyId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StartTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    EndTime = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsPrivate = table.Column<bool>(type: "bit", nullable: false),
+                    RoutinesExercisesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoutinesExercisesBody", x => x.RoutinesExercisesBodyId);
+                    table.ForeignKey(
+                        name: "FK_RoutinesExercisesBody_RoutinesExercises_RoutinesExercisesId",
+                        column: x => x.RoutinesExercisesId,
+                        principalTable: "RoutinesExercises",
+                        principalColumn: "RoutinesExercisesId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -317,6 +486,16 @@ namespace GymLog.Migrations
                 column: "VendasId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_RoutinesExercises_RoutinesSetsId",
+                table: "RoutinesExercises",
+                column: "RoutinesSetsId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_RoutinesExercisesBody_RoutinesExercisesId",
+                table: "RoutinesExercisesBody",
+                column: "RoutinesExercisesId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Vendas_ClientesId",
                 table: "Vendas",
                 column: "ClientesId");
@@ -341,13 +520,40 @@ namespace GymLog.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "Compras");
+
+            migrationBuilder.DropTable(
+                name: "DeletedWorkout");
+
+            migrationBuilder.DropTable(
+                name: "ExerciseTemplate");
+
+            migrationBuilder.DropTable(
                 name: "Financeiros");
+
+            migrationBuilder.DropTable(
+                name: "FolderRoutines");
 
             migrationBuilder.DropTable(
                 name: "ItensVenda");
 
             migrationBuilder.DropTable(
                 name: "Pagamentos");
+
+            migrationBuilder.DropTable(
+                name: "PaginatedWorkoutEvents");
+
+            migrationBuilder.DropTable(
+                name: "Routine");
+
+            migrationBuilder.DropTable(
+                name: "RoutineFolder");
+
+            migrationBuilder.DropTable(
+                name: "RoutinesExercisesBody");
+
+            migrationBuilder.DropTable(
+                name: "Workout");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -362,7 +568,13 @@ namespace GymLog.Migrations
                 name: "Vendas");
 
             migrationBuilder.DropTable(
+                name: "RoutinesExercises");
+
+            migrationBuilder.DropTable(
                 name: "Clientes");
+
+            migrationBuilder.DropTable(
+                name: "RoutinesSets");
         }
     }
 }

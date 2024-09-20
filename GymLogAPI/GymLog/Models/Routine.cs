@@ -9,7 +9,7 @@ namespace GymLog.Models
         [Required(ErrorMessage = "O campo 'Título' é obrigatório.")]
         [Display(Name = "Título")]
         public string Title { get; set; }
-        public long FolderId { get; set; }
+        
 
         [Required(ErrorMessage = "O campo 'Exercícios' é obrigatório.")]
         [Display(Name = "Exercícios")]
