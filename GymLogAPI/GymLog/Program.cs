@@ -1,4 +1,5 @@
 using GymLog.Data;
+using GymLog.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -97,6 +98,12 @@ builder.Services.AddIdentityApiEndpoints<IdentityUser>(options =>
 //Serviço de Autenticação
 builder.Services.AddAuthorization();
 builder.Services.AddAuthentication();
+
+//serviço de Configuração e     
+var emailConfig = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfig>();
+
+//Criar uma única instância da config do email
+builder.Services.AddSingleton(emailConfig);
 
 var app = builder.Build();
 
