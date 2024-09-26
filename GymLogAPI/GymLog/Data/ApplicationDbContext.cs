@@ -50,5 +50,6 @@ namespace GymLog.Data
         public DbSet<GymLog.Models.RoutinesExercisesBody> RoutinesExercisesBody { get; set; } = default!;
         public DbSet<GymLog.Models.RoutinesSets> RoutinesSets { get; set; } = default!;
         public DbSet<GymLog.Models.Workout> Workout { get; set; } = default!;
+        public DbSet<GymLog.Models.User> User { get; set; } = default!;
     }
 }
