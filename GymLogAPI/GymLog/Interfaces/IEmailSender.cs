@@ -1,10 +1,10 @@
-﻿using Microsoft.DotNet.Scaffolding.Shared.Messaging;
+﻿using GymLog.Models;
 
 namespace GymLog.Interfaces
 {
-    public class IEmailSender
+    public interface IEmailSender
     {
-        void SendEmail(Message message);
-        Task SendEmailAsync(Message message);
+        void SendEmail(Mensagem message);
+        Task SendEmailAsync(Mensagem message);
     }
 }

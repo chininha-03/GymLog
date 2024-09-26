@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GymLog.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240912191454_Inicial")]
-    partial class Inicial
+    [Migration("20240926123309_popi")]
+    partial class popi
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -38,15 +38,14 @@ namespace GymLog.Migrations
                     b.Property<DateTime?>("DataCadastro")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateOnly>("DataNasciemnto")
-                        .HasColumnType("date");
+                    b.Property<DateTime>("DataNasciemnto")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NivelAtividade")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Peso")
@@ -59,6 +58,70 @@ namespace GymLog.Migrations
                     b.HasKey("ClientesId");
 
                     b.ToTable("Clientes", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.Compras", b =>
+                {
+                    b.Property<Guid>("ComprasId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("HorarioCompra")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Preco")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
+                    b.HasKey("ComprasId");
+
+                    b.ToTable("Compras", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.DeletedWorkout", b =>
+                {
+                    b.Property<Guid>("DeletedWorkoutId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("DeletedWorkoutId");
+
+                    b.ToTable("DeletedWorkout", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.ExerciseTemplate", b =>
+                {
+                    b.Property<Guid>("ExerciseTemplateId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsCustom")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("PrimaryMuscleGroup")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SecondaryMuscleGroups")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ExerciseTemplateId");
+
+                    b.ToTable("ExerciseTemplate", (string)null);
                 });
 
             modelBuilder.Entity("GymLog.Models.Financeiros", b =>
@@ -82,6 +145,21 @@ namespace GymLog.Migrations
                     b.HasKey("FinanceirosId");
 
                     b.ToTable("Financeiros", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.FolderRoutines", b =>
+                {
+                    b.Property<Guid>("FolderRoutinesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("FolderRoutinesId");
+
+                    b.ToTable("FolderRoutines", (string)null);
                 });
 
             modelBuilder.Entity("GymLog.Models.ItensVendas", b =>
@@ -137,6 +215,27 @@ namespace GymLog.Migrations
                     b.ToTable("Pagamentos", (string)null);
                 });
 
+            modelBuilder.Entity("GymLog.Models.PaginatedWorkoutEvents", b =>
+                {
+                    b.Property<Guid>("PaginatedWorkoutEventsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Events")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Page")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PageCount")
+                        .HasColumnType("int");
+
+                    b.HasKey("PaginatedWorkoutEventsId");
+
+                    b.ToTable("PaginatedWorkoutEvents", (string)null);
+                });
+
             modelBuilder.Entity("GymLog.Models.Produtos", b =>
                 {
                     b.Property<Guid>("ProdutosId")
@@ -166,6 +265,127 @@ namespace GymLog.Migrations
                     b.ToTable("Produtos", (string)null);
                 });
 
+            modelBuilder.Entity("GymLog.Models.Routine", b =>
+                {
+                    b.Property<Guid>("RoutineId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Exercises")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RoutineId");
+
+                    b.ToTable("Routine", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutineFolder", b =>
+                {
+                    b.Property<Guid>("RoutineFolderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Index")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("RoutineFolderId");
+
+                    b.ToTable("RoutineFolder", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutinesExercises", b =>
+                {
+                    b.Property<Guid>("RoutinesExercisesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("NotesExercises")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RestSeconds")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("RoutinesSetsId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("RoutinesExercisesId");
+
+                    b.HasIndex("RoutinesSetsId");
+
+                    b.ToTable("RoutinesExercises", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutinesExercisesBody", b =>
+                {
+                    b.Property<Guid>("RoutinesExercisesBodyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EndTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsPrivate")
+                        .HasColumnType("bit");
+
+                    b.Property<Guid>("RoutinesExercisesId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("StartTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RoutinesExercisesBodyId");
+
+                    b.HasIndex("RoutinesExercisesId");
+
+                    b.ToTable("RoutinesExercisesBody", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutinesSets", b =>
+                {
+                    b.Property<Guid>("RoutinesSetsId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Peso")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Reps")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SetType")
+                        .HasColumnType("int");
+
+                    b.HasKey("RoutinesSetsId");
+
+                    b.ToTable("RoutinesSets", (string)null);
+                });
+
             modelBuilder.Entity("GymLog.Models.Vendas", b =>
                 {
                     b.Property<Guid>("VendasId")
@@ -192,6 +412,37 @@ namespace GymLog.Migrations
                     b.HasIndex("ClientesId");
 
                     b.ToTable("Vendas", (string)null);
+                });
+
+            modelBuilder.Entity("GymLog.Models.Workout", b =>
+                {
+                    b.Property<Guid>("WorkoutId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EndTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Exercises")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("StartTime")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("WorkoutId");
+
+                    b.ToTable("Workout", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -407,6 +658,28 @@ namespace GymLog.Migrations
                     b.Navigation("Produtos");
 
                     b.Navigation("Vendas");
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutinesExercises", b =>
+                {
+                    b.HasOne("GymLog.Models.RoutinesSets", "RoutinesSets")
+                        .WithMany()
+                        .HasForeignKey("RoutinesSetsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RoutinesSets");
+                });
+
+            modelBuilder.Entity("GymLog.Models.RoutinesExercisesBody", b =>
+                {
+                    b.HasOne("GymLog.Models.RoutinesExercises", "RoutinesExercises")
+                        .WithMany()
+                        .HasForeignKey("RoutinesExercisesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("RoutinesExercises");
                 });
 
             modelBuilder.Entity("GymLog.Models.Vendas", b =>
