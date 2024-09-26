@@ -23,3 +23,6 @@ namespace GymLog.Models
         public string? UserId { get; set; }
     }
 }
+
+
+
