@@ -50,7 +50,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
+          "SelectedChildIndex": 8,
+=======
           "SelectedChildIndex": 3,
+>>>>>>> chininha
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +67,121 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+<<<<<<< HEAD
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240926123122_popi.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Migrations\\20240926123122_popi.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240926123122_popi.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Migrations\\20240926123122_popi.cs",
+              "RelativeToolTip": "Migrations\\20240926123122_popi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:31:22.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoutinesExercises.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesExercises.cs",
+              "RelativeDocumentMoniker": "Models\\RoutinesExercises.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesExercises.cs",
+              "RelativeToolTip": "Models\\RoutinesExercises.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:54:10.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoutinesExercisesBody.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesExercisesBody.cs",
+              "RelativeDocumentMoniker": "Models\\RoutinesExercisesBody.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesExercisesBody.cs",
+              "RelativeToolTip": "Models\\RoutinesExercisesBody.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:54:29.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoutinesSets.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesSets.cs",
+              "RelativeDocumentMoniker": "Models\\RoutinesSets.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\RoutinesSets.cs",
+              "RelativeToolTip": "Models\\RoutinesSets.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:54:44.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FolderRoutines.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\FolderRoutines.cs",
+              "RelativeDocumentMoniker": "Models\\FolderRoutines.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\FolderRoutines.cs",
+              "RelativeToolTip": "Models\\FolderRoutines.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:01:26.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA0wDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:22:52.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Routine.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Routine.cs",
+              "RelativeDocumentMoniker": "Models\\Routine.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Routine.cs",
+              "RelativeToolTip": "Models\\Routine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:01:00.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produtos.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Produtos.cs",
+              "RelativeDocumentMoniker": "Models\\Produtos.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Produtos.cs",
+              "RelativeToolTip": "Models\\Produtos.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBUAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T12:01:32.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAADwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-26T11:35:11.394Z"
+=======
             },
             {
               "$type": "Document",
@@ -76,6 +195,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T17:42:56.972Z",
               "EditorCaption": ""
+>>>>>>> chininha
             },
             {
               "$type": "Document",
@@ -87,6 +207,9 @@
               "RelativeToolTip": "Controllers\\PaginatedWorkoutEventsController.cs",
               "ViewState": "AQIAAEQAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2024-09-26T12:00:24.93Z"
+=======
               "WhenOpened": "2024-09-26T17:40:53.054Z",
               "EditorCaption": ""
             },
@@ -180,6 +303,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-26T17:35:26.541Z",
               "EditorCaption": ""
+>>>>>>> chininha
             },
             {
               "$type": "Document",
@@ -191,8 +315,72 @@
               "RelativeToolTip": "Controllers\\WorkoutsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+<<<<<<< HEAD
+              "WhenOpened": "2024-09-26T11:56:36.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Workout.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Workout.cs",
+              "RelativeDocumentMoniker": "Models\\Workout.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\Workout.cs",
+              "RelativeToolTip": "Models\\Workout.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:58:57.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "Controllers\\ClientesController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAIkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:44:11.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DeletedWorkout.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\DeletedWorkout.cs",
+              "RelativeDocumentMoniker": "Models\\DeletedWorkout.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\DeletedWorkout.cs",
+              "RelativeToolTip": "Models\\DeletedWorkout.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:39:25.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Models\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Models\\EmailSender.cs",
+              "RelativeToolTip": "Models\\EmailSender.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:36:50.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Interfaces\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\Sesi3\\source\\repos\\chininha-03\\GymLog\\GymLogAPI\\GymLog\\Interfaces\\IEmailSender.cs",
+              "RelativeToolTip": "Interfaces\\IEmailSender.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T11:32:32.468Z"
+=======
               "WhenOpened": "2024-09-26T17:34:07.88Z",
               "EditorCaption": ""
+>>>>>>> chininha
             }
           ]
         }

@@ -1,6 +1,6 @@
 obj
 bin
-
+.vs
 
 # Editor directories and files
 .vscode/*

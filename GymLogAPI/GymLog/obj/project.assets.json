@@ -46,6 +46,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "BouncyCastle.Cryptography/2.4.0": {
         "type": "package",
         "compile": {
@@ -59,6 +61,7 @@
           }
         }
       },
+>>>>>>> chininha
       "Humanizer/2.14.1": {
         "type": "package",
         "dependencies": {
@@ -653,6 +656,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "MailKit/4.7.1.1": {
         "type": "package",
         "dependencies": {
@@ -670,6 +675,7 @@
           }
         }
       },
+>>>>>>> chininha
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.8": {
         "type": "package",
         "compile": {
@@ -2052,6 +2058,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "MimeKit/4.7.1": {
         "type": "package",
         "dependencies": {
@@ -2070,6 +2078,7 @@
           }
         }
       },
+>>>>>>> chininha
       "Mono.TextTemplating/2.3.1": {
         "type": "package",
         "dependencies": {
@@ -2506,20 +2515,35 @@
           }
         }
       },
+<<<<<<< HEAD
+      "System.Formats.Asn1/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Formats.Asn1.dll": {
+=======
       "System.Formats.Asn1/8.0.1": {
         "type": "package",
         "compile": {
           "lib/net8.0/System.Formats.Asn1.dll": {
+>>>>>>> chininha
             "related": ".xml"
           }
         },
         "runtime": {
+<<<<<<< HEAD
+          "lib/net6.0/System.Formats.Asn1.dll": {
+=======
           "lib/net8.0/System.Formats.Asn1.dll": {
+>>>>>>> chininha
             "related": ".xml"
           }
         },
         "build": {
+<<<<<<< HEAD
+          "buildTransitive/netcoreapp3.1/_._": {}
+=======
           "buildTransitive/net6.0/_._": {}
+>>>>>>> chininha
         }
       },
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
@@ -2750,6 +2774,15 @@
           }
         }
       },
+<<<<<<< HEAD
+      "System.Security.Cryptography.Pkcs/6.0.4": {
+        "type": "package",
+        "dependencies": {
+          "System.Formats.Asn1": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+=======
       "System.Security.Cryptography.Pkcs/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -2757,19 +2790,31 @@
         },
         "compile": {
           "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+>>>>>>> chininha
             "related": ".xml"
           }
         },
         "runtime": {
+<<<<<<< HEAD
+          "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+=======
           "lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+>>>>>>> chininha
             "related": ".xml"
           }
         },
         "build": {
+<<<<<<< HEAD
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
+=======
           "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
           "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll": {
+>>>>>>> chininha
             "assetType": "runtime",
             "rid": "win"
           }
@@ -3026,6 +3071,8 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+<<<<<<< HEAD
+=======
     "BouncyCastle.Cryptography/2.4.0": {
       "sha512": "SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
       "type": "package",
@@ -3046,6 +3093,7 @@
         "packageIcon.png"
       ]
     },
+>>>>>>> chininha
     "Humanizer/2.14.1": {
       "sha512": "/FUTD3cEceAAmJSCPN9+J+VhGwmL/C12jvwlyM1DFXShEMsBzvLzLqSrJ2rb+k/W2znKw7JyflZgZpyE+tI7lA==",
       "type": "package",
@@ -3792,6 +3840,8 @@
         "logo.png"
       ]
     },
+<<<<<<< HEAD
+=======
     "MailKit/4.7.1.1": {
       "sha512": "Y3okmIxu8g/ZcoJiE2i+dCeKgnNyddsXmcJslZnCPGVPP0aRyeVINHV1h97V+OVMdqjQI6O12J2p8Duwq5UEqQ==",
       "type": "package",
@@ -3836,6 +3886,7 @@
         "mailkit.nuspec"
       ]
     },
+>>>>>>> chininha
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.8": {
       "sha512": "VrfHrQwvj8p5W3z+PhHCkUMgpPnThJ9ZDeu+AJrFGWFvHSA6sI7iP/k9LjqkdFXsFezlOOZWNAgB6EH9gCCA4g==",
       "type": "package",
@@ -6792,6 +6843,8 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< HEAD
+=======
     "MimeKit/4.7.1": {
       "sha512": "Qoj4aVvhX14A1FNvaJ33hzOP4VZI2j+Mr38I9wSGcjMq4BYDtWLJG89aJ9nRW2cNfH6Czjwyp7+Mh++xv3AZvg==",
       "type": "package",
@@ -6834,6 +6887,7 @@
         "mimekit.nuspec"
       ]
     },
+>>>>>>> chininha
     "Mono.TextTemplating/2.3.1": {
       "sha512": "pqYwzNqDL0QK1JFpAjpI/NPqyqLGpHLvVmA5Ec0LaSnbIDtEXxu0td16uunegb7c8xAnlcm4qkbIYUP5FfrFpA==",
       "type": "package",
@@ -7450,16 +7504,34 @@
         "useSharedDesignerContext.txt"
       ]
     },
+<<<<<<< HEAD
+    "System.Formats.Asn1/6.0.0": {
+      "sha512": "T6fD00dQ3NTbPDy31m4eQUwKW84s03z0N2C8HpOklyeaDgaJPa/TexP4/SkORMSOwc7WhKifnA6Ya33AkzmafA==",
+      "type": "package",
+      "path": "system.formats.asn1/6.0.0",
+=======
     "System.Formats.Asn1/8.0.1": {
       "sha512": "XqKba7Mm/koKSjKMfW82olQdmfbI5yqeoLV/tidRp7fbh5rmHAQ5raDI/7SU0swTzv+jgqtUGkzmFxuUg0it1A==",
       "type": "package",
       "path": "system.formats.asn1/8.0.1",
+>>>>>>> chininha
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+<<<<<<< HEAD
+        "buildTransitive/netcoreapp2.0/System.Formats.Asn1.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Formats.Asn1.dll",
+        "lib/net461/System.Formats.Asn1.xml",
+        "lib/net6.0/System.Formats.Asn1.dll",
+        "lib/net6.0/System.Formats.Asn1.xml",
+        "lib/netstandard2.0/System.Formats.Asn1.dll",
+        "lib/netstandard2.0/System.Formats.Asn1.xml",
+        "system.formats.asn1.6.0.0.nupkg.sha512",
+=======
         "buildTransitive/net461/System.Formats.Asn1.targets",
         "buildTransitive/net462/_._",
         "buildTransitive/net6.0/_._",
@@ -7475,6 +7547,7 @@
         "lib/netstandard2.0/System.Formats.Asn1.dll",
         "lib/netstandard2.0/System.Formats.Asn1.xml",
         "system.formats.asn1.8.0.1.nupkg.sha512",
+>>>>>>> chininha
         "system.formats.asn1.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -7999,16 +8072,33 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
+    "System.Security.Cryptography.Pkcs/6.0.4": {
+      "sha512": "LGbXi1oUJ9QgCNGXRO9ndzBL/GZgANcsURpMhNR8uO+rca47SZmciS3RSQUvlQRwK3QHZSHNOXzoMUASKA+Anw==",
+      "type": "package",
+      "path": "system.security.cryptography.pkcs/6.0.4",
+=======
     "System.Security.Cryptography.Pkcs/8.0.0": {
       "sha512": "ULmp3xoOwNYjOYp4JZ2NK/6NdTgiN1GQXzVVN1njQ7LOZ0d0B9vyMnhyqbIi9Qw4JXj1JgCsitkTShboHRx7Eg==",
       "type": "package",
       "path": "system.security.cryptography.pkcs/8.0.0",
+>>>>>>> chininha
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+<<<<<<< HEAD
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Security.Cryptography.Pkcs.dll",
+        "lib/net461/System.Security.Cryptography.Pkcs.xml",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
+        "lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
+=======
         "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
         "buildTransitive/net462/_._",
         "buildTransitive/net6.0/_._",
@@ -8021,10 +8111,24 @@
         "lib/net7.0/System.Security.Cryptography.Pkcs.xml",
         "lib/net8.0/System.Security.Cryptography.Pkcs.dll",
         "lib/net8.0/System.Security.Cryptography.Pkcs.xml",
+>>>>>>> chininha
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+<<<<<<< HEAD
+        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net461/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "system.security.cryptography.pkcs.6.0.4.nupkg.sha512",
+=======
         "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net6.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/net7.0/System.Security.Cryptography.Pkcs.dll",
@@ -8032,6 +8136,7 @@
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
         "system.security.cryptography.pkcs.8.0.0.nupkg.sha512",
+>>>>>>> chininha
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -8491,7 +8596,10 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+<<<<<<< HEAD
+=======
       "MailKit >= 4.7.1.1",
+>>>>>>> chininha
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.8",
       "Microsoft.AspNetCore.OpenApi >= 8.0.8",
       "Microsoft.EntityFrameworkCore >= 8.0.8",
@@ -8499,7 +8607,10 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.8",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.5",
+<<<<<<< HEAD
+=======
       "MimeKit >= 4.7.1",
+>>>>>>> chininha
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -8553,10 +8664,13 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+<<<<<<< HEAD
+=======
           "MailKit": {
             "target": "Package",
             "version": "[4.7.1.1, )"
           },
+>>>>>>> chininha
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.8, )"
@@ -8589,10 +8703,13 @@
             "target": "Package",
             "version": "[8.0.5, )"
           },
+<<<<<<< HEAD
+=======
           "MimeKit": {
             "target": "Package",
             "version": "[4.7.1, )"
           },
+>>>>>>> chininha
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.4.0, )"

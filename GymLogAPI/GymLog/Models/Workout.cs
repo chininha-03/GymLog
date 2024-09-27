@@ -5,9 +5,12 @@ namespace GymLog.Models
     public class Workout
     {
         public Guid WorkoutId { get; set; }
+<<<<<<< HEAD
+=======
 
         [Required(ErrorMessage = "O campo 'Título' é obrigatório.")]
         [Display(Name = "Título")]
+>>>>>>> chininha
         public string Title { get; set; }
 
         //[Required(ErrorMessage = "O campo 'Descrição' é obrigatório.")]
