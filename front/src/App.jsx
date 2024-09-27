@@ -1,11 +1,14 @@
-import { useState } from "react";
-
+import React from "react";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+import { Outlet } from "react-router-dom";
 
-  return <></>;
-}
+const App = () => {
+  return (
+    <>
+      <Outlet />
+    </>
+  );
+};
 
 export default App;
