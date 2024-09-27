@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/Routines/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Routine>> GetRoutine(long id)
+        public async Task<ActionResult<Routine>> GetRoutine(Guid id)
         {
             var routine = await _context.Routine.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/Routines/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoutine(long id, Routine routine)
+        public async Task<IActionResult> PutRoutine(Guid id, Routine routine)
         {
-            if (id != routine.Id)
+            if (id != routine.RoutineId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.Routine.Add(routine);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRoutine", new { id = routine.Id }, routine);
+            return CreatedAtAction("GetRoutine", new { id = routine.RoutineId }, routine);
         }
 
         // DELETE: api/Routines/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRoutine(long id)
+        public async Task<IActionResult> DeleteRoutine(Guid id)
         {
             var routine = await _context.Routine.FindAsync(id);
             if (routine == null)
@@ -99,21 +99,10 @@ namespace GymLog.Controllers
 
             return NoContent();
         }
-        [HttpGet("filtrar/{nome}")]
-        public async Task<IActionResult> BuscarNome(string nome)
-        {
-            // Criar um filtro por nome na tabela Clientes
-            var listaRout = _context.Routine.Where(c => c.Title.Contains(nome)).ToList();
-            if (listaRout.Count > 0)
-            {
-                return Ok(listaRout);
-            }
-            return NotFound(nome);
-        }
 
-        private bool RoutineExists(long id)
+        private bool RoutineExists(Guid id)
         {
-            return _context.Routine.Any(e => e.Id == id);
+            return _context.Routine.Any(e => e.RoutineId == id);
         }
     }
 }

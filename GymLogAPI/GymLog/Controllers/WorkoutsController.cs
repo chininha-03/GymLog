@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/Workouts/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Workout>> GetWorkout(long id)
+        public async Task<ActionResult<Workout>> GetWorkout(Guid id)
         {
             var workout = await _context.Workout.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/Workouts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutWorkout(long id, Workout workout)
+        public async Task<IActionResult> PutWorkout(Guid id, Workout workout)
         {
-            if (id != workout.Id)
+            if (id != workout.WorkoutId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.Workout.Add(workout);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetWorkout", new { id = workout.Id }, workout);
+            return CreatedAtAction("GetWorkout", new { id = workout.WorkoutId }, workout);
         }
 
         // DELETE: api/Workouts/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteWorkout(long id)
+        public async Task<IActionResult> DeleteWorkout(Guid id)
         {
             var workout = await _context.Workout.FindAsync(id);
             if (workout == null)
@@ -100,9 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        private bool WorkoutExists(long id)
+        private bool WorkoutExists(Guid id)
         {
-            return _context.Workout.Any(e => e.Id == id);
+            return _context.Workout.Any(e => e.WorkoutId == id);
         }
     }
 }

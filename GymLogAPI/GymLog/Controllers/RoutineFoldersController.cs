@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/RoutineFolders/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RoutineFolder>> GetRoutineFolder(long id)
+        public async Task<ActionResult<RoutineFolder>> GetRoutineFolder(Guid id)
         {
             var routineFolder = await _context.RoutineFolder.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/RoutineFolders/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoutineFolder(long id, RoutineFolder routineFolder)
+        public async Task<IActionResult> PutRoutineFolder(Guid id, RoutineFolder routineFolder)
         {
-            if (id != routineFolder.Id)
+            if (id != routineFolder.RoutineFolderId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.RoutineFolder.Add(routineFolder);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRoutineFolder", new { id = routineFolder.Id }, routineFolder);
+            return CreatedAtAction("GetRoutineFolder", new { id = routineFolder.RoutineFolderId }, routineFolder);
         }
 
         // DELETE: api/RoutineFolders/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRoutineFolder(long id)
+        public async Task<IActionResult> DeleteRoutineFolder(Guid id)
         {
             var routineFolder = await _context.RoutineFolder.FindAsync(id);
             if (routineFolder == null)
@@ -100,22 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        [HttpGet("filtrar/{nome}")]
-        public async Task<IActionResult> BuscarNome(string nome)
+        private bool RoutineFolderExists(Guid id)
         {
-            // Criar um filtro por nome na tabela Clientes
-            var listaFold = _context.Routine.Where(c => c.Title.Contains(nome)).ToList();
-            if (listaFold.Count > 0)
-            {
-                return Ok(listaFold);
-            }
-            return NotFound(nome);
-        }
-
-
-        private bool RoutineFolderExists(long id)
-        {
-            return _context.RoutineFolder.Any(e => e.Id == id);
+            return _context.RoutineFolder.Any(e => e.RoutineFolderId == id);
         }
     }
 }

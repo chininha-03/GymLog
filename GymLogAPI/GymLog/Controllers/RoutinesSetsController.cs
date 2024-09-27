@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/RoutinesSets/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RoutinesSets>> GetRoutinesSets(long id)
+        public async Task<ActionResult<RoutinesSets>> GetRoutinesSets(Guid id)
         {
             var routinesSets = await _context.RoutinesSets.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/RoutinesSets/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoutinesSets(long id, RoutinesSets routinesSets)
+        public async Task<IActionResult> PutRoutinesSets(Guid id, RoutinesSets routinesSets)
         {
-            if (id != routinesSets.Id)
+            if (id != routinesSets.RoutinesSetsId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.RoutinesSets.Add(routinesSets);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRoutinesSets", new { id = routinesSets.Id }, routinesSets);
+            return CreatedAtAction("GetRoutinesSets", new { id = routinesSets.RoutinesSetsId }, routinesSets);
         }
 
         // DELETE: api/RoutinesSets/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRoutinesSets(long id)
+        public async Task<IActionResult> DeleteRoutinesSets(Guid id)
         {
             var routinesSets = await _context.RoutinesSets.FindAsync(id);
             if (routinesSets == null)
@@ -100,9 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        private bool RoutinesSetsExists(long id)
+        private bool RoutinesSetsExists(Guid id)
         {
-            return _context.RoutinesSets.Any(e => e.Id == id);
+            return _context.RoutinesSets.Any(e => e.RoutinesSetsId == id);
         }
     }
 }

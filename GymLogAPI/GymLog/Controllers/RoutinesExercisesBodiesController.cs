@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/RoutinesExercisesBodies/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RoutinesExercisesBody>> GetRoutinesExercisesBody(long id)
+        public async Task<ActionResult<RoutinesExercisesBody>> GetRoutinesExercisesBody(Guid id)
         {
             var routinesExercisesBody = await _context.RoutinesExercisesBody.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/RoutinesExercisesBodies/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoutinesExercisesBody(long id, RoutinesExercisesBody routinesExercisesBody)
+        public async Task<IActionResult> PutRoutinesExercisesBody(Guid id, RoutinesExercisesBody routinesExercisesBody)
         {
-            if (id != routinesExercisesBody.Id)
+            if (id != routinesExercisesBody.RoutinesExercisesBodyId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.RoutinesExercisesBody.Add(routinesExercisesBody);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRoutinesExercisesBody", new { id = routinesExercisesBody.Id }, routinesExercisesBody);
+            return CreatedAtAction("GetRoutinesExercisesBody", new { id = routinesExercisesBody.RoutinesExercisesBodyId }, routinesExercisesBody);
         }
 
         // DELETE: api/RoutinesExercisesBodies/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRoutinesExercisesBody(long id)
+        public async Task<IActionResult> DeleteRoutinesExercisesBody(Guid id)
         {
             var routinesExercisesBody = await _context.RoutinesExercisesBody.FindAsync(id);
             if (routinesExercisesBody == null)
@@ -100,9 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        private bool RoutinesExercisesBodyExists(long id)
+        private bool RoutinesExercisesBodyExists(Guid id)
         {
-            return _context.RoutinesExercisesBody.Any(e => e.Id == id);
+            return _context.RoutinesExercisesBody.Any(e => e.RoutinesExercisesBodyId == id);
         }
     }
 }

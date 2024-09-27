@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/DeletedWorkouts/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<DeletedWorkout>> GetDeletedWorkout(long id)
+        public async Task<ActionResult<DeletedWorkout>> GetDeletedWorkout(Guid id)
         {
             var deletedWorkout = await _context.DeletedWorkout.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/DeletedWorkouts/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDeletedWorkout(long id, DeletedWorkout deletedWorkout)
+        public async Task<IActionResult> PutDeletedWorkout(Guid id, DeletedWorkout deletedWorkout)
         {
-            if (id != deletedWorkout.Id)
+            if (id != deletedWorkout.DeletedWorkoutId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.DeletedWorkout.Add(deletedWorkout);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDeletedWorkout", new { id = deletedWorkout.Id }, deletedWorkout);
+            return CreatedAtAction("GetDeletedWorkout", new { id = deletedWorkout.DeletedWorkoutId }, deletedWorkout);
         }
 
         // DELETE: api/DeletedWorkouts/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteDeletedWorkout(long id)
+        public async Task<IActionResult> DeleteDeletedWorkout(Guid id)
         {
             var deletedWorkout = await _context.DeletedWorkout.FindAsync(id);
             if (deletedWorkout == null)
@@ -100,9 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        private bool DeletedWorkoutExists(long id)
+        private bool DeletedWorkoutExists(Guid id)
         {
-            return _context.DeletedWorkout.Any(e => e.Id == id);
+            return _context.DeletedWorkout.Any(e => e.DeletedWorkoutId == id);
         }
     }
 }

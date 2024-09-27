@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/ExerciseTemplates/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ExerciseTemplate>> GetExerciseTemplate(long id)
+        public async Task<ActionResult<ExerciseTemplate>> GetExerciseTemplate(Guid id)
         {
             var exerciseTemplate = await _context.ExerciseTemplate.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/ExerciseTemplates/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutExerciseTemplate(long id, ExerciseTemplate exerciseTemplate)
+        public async Task<IActionResult> PutExerciseTemplate(Guid id, ExerciseTemplate exerciseTemplate)
         {
-            if (id != exerciseTemplate.Id)
+            if (id != exerciseTemplate.ExerciseTemplateId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.ExerciseTemplate.Add(exerciseTemplate);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetExerciseTemplate", new { id = exerciseTemplate.Id }, exerciseTemplate);
+            return CreatedAtAction("GetExerciseTemplate", new { id = exerciseTemplate.ExerciseTemplateId }, exerciseTemplate);
         }
 
         // DELETE: api/ExerciseTemplates/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteExerciseTemplate(long id)
+        public async Task<IActionResult> DeleteExerciseTemplate(Guid id)
         {
             var exerciseTemplate = await _context.ExerciseTemplate.FindAsync(id);
             if (exerciseTemplate == null)
@@ -100,22 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        [HttpGet("filtrar/{nome}")]
-        public async Task<IActionResult> BuscarNome(string nome)
+        private bool ExerciseTemplateExists(Guid id)
         {
-            // Criar um filtro por nome na tabela Clientes
-            var listaExer = _context.ExerciseTemplate.Where(c => c.Title.Contains(nome)).ToList();
-            if (listaExer.Count > 0)
-            {
-                return Ok(listaExer);
-            }
-            return NotFound(nome);
-        }
-
-
-        private bool ExerciseTemplateExists(long id)
-        {
-            return _context.ExerciseTemplate.Any(e => e.Id == id);
+            return _context.ExerciseTemplate.Any(e => e.ExerciseTemplateId == id);
         }
     }
 }

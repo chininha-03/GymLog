@@ -36,7 +36,6 @@ namespace GymLog.Data
             builder.Entity<RoutinesExercises>().ToTable("RoutinesExercises");
             builder.Entity<RoutinesExercisesBody>().ToTable("RoutinesExercisesBody");
             builder.Entity<RoutinesSets>().ToTable("RoutinesSets");
-            builder.Entity<UpdatedWorkout>().ToTable("UpdatedWorkout");
             builder.Entity<Pagamentos>().ToTable("Pagamentos");
 
 
@@ -50,7 +49,7 @@ namespace GymLog.Data
         public DbSet<GymLog.Models.RoutinesExercises> RoutinesExercises { get; set; } = default!;
         public DbSet<GymLog.Models.RoutinesExercisesBody> RoutinesExercisesBody { get; set; } = default!;
         public DbSet<GymLog.Models.RoutinesSets> RoutinesSets { get; set; } = default!;
-        public DbSet<GymLog.Models.UpdatedWorkout> UpdatedWorkout { get; set; } = default!;
         public DbSet<GymLog.Models.Workout> Workout { get; set; } = default!;
+        public DbSet<GymLog.Models.User> User { get; set; } = default!;
     }
 }

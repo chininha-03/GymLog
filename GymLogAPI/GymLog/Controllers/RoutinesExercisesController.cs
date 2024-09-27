@@ -30,7 +30,7 @@ namespace GymLog.Controllers
 
         // GET: api/RoutinesExercises/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<RoutinesExercises>> GetRoutinesExercises(long id)
+        public async Task<ActionResult<RoutinesExercises>> GetRoutinesExercises(Guid id)
         {
             var routinesExercises = await _context.RoutinesExercises.FindAsync(id);
 
@@ -45,9 +45,9 @@ namespace GymLog.Controllers
         // PUT: api/RoutinesExercises/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutRoutinesExercises(long id, RoutinesExercises routinesExercises)
+        public async Task<IActionResult> PutRoutinesExercises(Guid id, RoutinesExercises routinesExercises)
         {
-            if (id != routinesExercises.Id)
+            if (id != routinesExercises.RoutinesExercisesId)
             {
                 return BadRequest();
             }
@@ -81,12 +81,12 @@ namespace GymLog.Controllers
             _context.RoutinesExercises.Add(routinesExercises);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetRoutinesExercises", new { id = routinesExercises.Id }, routinesExercises);
+            return CreatedAtAction("GetRoutinesExercises", new { id = routinesExercises.RoutinesExercisesId }, routinesExercises);
         }
 
         // DELETE: api/RoutinesExercises/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteRoutinesExercises(long id)
+        public async Task<IActionResult> DeleteRoutinesExercises(Guid id)
         {
             var routinesExercises = await _context.RoutinesExercises.FindAsync(id);
             if (routinesExercises == null)
@@ -100,9 +100,9 @@ namespace GymLog.Controllers
             return NoContent();
         }
 
-        private bool RoutinesExercisesExists(long id)
+        private bool RoutinesExercisesExists(Guid id)
         {
-            return _context.RoutinesExercises.Any(e => e.Id == id);
+            return _context.RoutinesExercises.Any(e => e.RoutinesExercisesId == id);
         }
     }
 }
