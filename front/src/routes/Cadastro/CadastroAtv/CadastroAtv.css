@@ -1,0 +1,153 @@
+.cadAtv-master {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: fit-content;
+}
+
+.cadAtv-text {
+  text-align: center;
+  margin: 10px;
+}
+
+.cadAtv-text h3 {
+  margin: 0 0 20px 0;
+  font-weight: 900;
+  font-size: 35px;
+
+  color: orange;
+}
+
+.cadAtv-text h5 {
+  margin: 0 0 20px 0;
+  font-weight: 650;
+  font-size: 25px;
+}
+
+.cadAtv-escolhaSexo {
+  display: flex;
+  flex-direction: row;
+  gap: 350px;
+}
+
+.cadAtv-escolhaSexo a{
+  text-decoration: none;
+}
+
+.cadAtv-escolhaSexo button {
+  border-radius: 19px;
+  background: #d1851a;
+  box-shadow: 18px 18px 36px #996113, -18px -18px 36px #ffa921;
+}
+
+/* From Uiverse.io by LilaRest */
+.card {
+  --bg: #e8e8e8;
+  --contrast: #e2e0e0;
+  --grey: #93a1a1;
+  position: relative;
+  padding: 9px;
+  background-color: var(--bg);
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(
+      var(--bg) 0.0000001%,
+      var(--grey) 0.000104%
+    )
+    60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+}
+
+.card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 190px;
+  height: 254px;
+  background-color: var(--contrast);
+  border-radius: 30px;
+  /* Content style */
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  font-family: monospace;
+
+  flex-direction: column;
+}
+
+/* From Uiverse.io by Nawsome */ 
+.svg-frame {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-frame svg {
+  position: absolute;
+  transition: .5s;
+  z-index: calc(1 - (0.2 * var(--j)));
+  transform-origin: center;
+  width: 344px;
+  height: 344px;
+  fill: none;
+}
+
+.svg-frame:hover svg {
+  transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+
+.svg-frame svg #center {
+  transition: .5s;
+  transform-origin: center;
+}
+
+.svg-frame:hover svg #center {
+  transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+
+#out2 {
+  animation: rotate16 7s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#out3 {
+  animation: rotate16 3s ease-in-out infinite alternate;
+  transform-origin: center;
+  stroke: #ff0;
+}
+
+#inner3,
+#inner1 {
+  animation: rotate16 4s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+#center1 {
+  fill: #ff0;
+  animation: rotate16 2s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes rotate16 {
+  to {
+    transform: rotate(360deg);
+  }
+}

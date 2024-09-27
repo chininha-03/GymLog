@@ -10,6 +10,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Login from "./routes/login/Login.jsx";
+import CadastroAtv from "./routes/Cadastro/CadastroAtv/CadastroAtv.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
     children: [
       // {path: "/Home", element: < Home  />}
       { path: "/login", element: <Login /> },
+      { path: "/cadAtiv", element: <CadastroAtv /> },
+
     ],
   },
 ]);
