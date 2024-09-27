@@ -5,7 +5,9 @@ namespace GymLog.Models
 {
     public class RoutinesSets
     {
+
         public Guid RoutinesSetsId { get; set; }
+
 
         [Required(ErrorMessage = "O campo 'Repetição' é obrigatório.")]
         [Display(Name = "Repetição")]

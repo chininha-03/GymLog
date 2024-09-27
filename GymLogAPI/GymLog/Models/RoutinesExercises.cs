@@ -6,8 +6,9 @@ namespace GymLog.Models
     {
         public Guid RoutinesExercisesId { get; set; }
 
-        //[Required(ErrorMessage = "O campo 'Notas do Exercício' é obrigatório.")]
+   
         [Display(Name = "Notas do Exercício")]
+
         public string NotesExercises { get; set; }
 
         //[Required(ErrorMessage = "O campo 'Tempo de Descanso' é obrigatório.")]
