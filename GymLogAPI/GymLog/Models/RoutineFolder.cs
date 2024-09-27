@@ -5,12 +5,9 @@ namespace GymLog.Models
     public class RoutineFolder
     {
         public Guid RoutineFolderId { get; set; }
-<<<<<<< HEAD
-=======
 
         [Required(ErrorMessage = "O campo 'Índice' é obrigatório.")]
         [Display(Name = "Índice")]
->>>>>>> chininha
         public int Index { get; set; }
 
         [Required(ErrorMessage = "O campo 'Título' é obrigatório.")]
