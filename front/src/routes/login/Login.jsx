@@ -128,6 +128,7 @@ function Login() {
                 </button>
               </form>
               {/* <form className="col-lg-6">
+>>>>>>> c59d624561c291e39cee03c82862002135c7ace5
                 <h3>LogIn</h3>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">
@@ -167,6 +168,7 @@ function Login() {
                 Entrar
               </button>
             </form> */}
+
               <img
                 className="img-fluid col-lg-6"
                 src={ImgLogin}
@@ -179,4 +181,5 @@ function Login() {
     );
   };
 }
+
 export default Login;
