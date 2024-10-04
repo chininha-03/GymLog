@@ -7,8 +7,10 @@ namespace GymLog.Models
         public Guid ExerciseTemplateId { get; set; }
 
 
+
         [Required(ErrorMessage = "O campo 'Título' é obrigatório.")]
         [Display(Name = "Título")]
+
         public string Title { get; set; }
 
         [Required(ErrorMessage = "O campo 'Tipo' é obrigatório.")]
