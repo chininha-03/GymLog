@@ -1,10 +1,53 @@
-.divMaster{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+/* Animação do texto 'B&W Technology' */
+@-webkit-keyframes animateText {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes animateText {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 
-.divMaster h5{
-        color: orange;
+.animateText {
+  -webkit-animation: animateText 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: animateText 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  color: orange;
+  font-size: 15px;
 }
+/* ------------------------------------------ */
+
+/* Div principal */
+.divMaster {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.divMaster h3 {
+  font-size: 20px;
+}
+
+/* .divMaster h5 {
+  color: orange;
+  font-size: 15px;
+} */

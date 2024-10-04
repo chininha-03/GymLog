@@ -1,0 +1,10 @@
+/* Div principal */
+.divHeader{
+    background-color: #fff;
+}
+
+.divHeader img{
+    /* height: 250px; */
+    width: 250px;
+    padding-left: 20px;
+}

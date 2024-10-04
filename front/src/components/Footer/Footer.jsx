@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={styles.divMaster}>
         <h3> Desenvolvido pela: </h3>
 
-        <h5>B&W Technology</h5>
+        <h5 className={styles.animateText}>B&W Technology</h5>
       </div>
     </>
   );
