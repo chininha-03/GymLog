@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 async function fetchData() {
   const url = "http://www.gym-log.somee.com";

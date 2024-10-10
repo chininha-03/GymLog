@@ -25,8 +25,9 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Home /> },
+      { path: "/", element: <Login /> },
       { path: "/login", element: <Login /> },
+      { path: "/home", element: <Home /> },
       { path: "/cadSexo", element: <CadastroAtv /> },
       { path: "/cadAtiv", element: <CadastroSexo /> },
       { path: "/cadNome", element: <CadastroNome /> },

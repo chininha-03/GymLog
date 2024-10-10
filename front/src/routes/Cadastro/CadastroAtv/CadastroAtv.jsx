@@ -8,9 +8,12 @@ import Footer from "../../../components/Footer/Footer";
 // import CadastroSexo from "../CadastroSexo/CadastroSexo.jsx";
 
 const CadastroAtv = () => {
+ 
+
   return (
     <>
       <BasicHeader />
+ 
       <div className="cadAtv-master">
         <div className="cadAtv-text ">
           <h3 className="">Qual é o seu sexo biologico?</h3>
@@ -25,7 +28,7 @@ const CadastroAtv = () => {
           <div className="sex rotate-vert-center">
             <button className="sexMasc">
               <Link to={"/cadAtiv"}>
-                <i class="bi bi-gender-male"></i>
+                <i className="bi bi-gender-male"></i>
                 <h3>Masculino</h3>
               </Link>
             </button>

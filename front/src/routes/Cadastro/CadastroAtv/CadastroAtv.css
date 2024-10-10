@@ -77,7 +77,6 @@
 }
 /* -------------------------------------------------------------------- */
 
-
 /* Alterações principalmente no cad do sexoMasculino */
 .sexMasc {
   box-shadow: inset 0 0 0 0 #9dbdff;
@@ -118,7 +117,6 @@
   line-height: 1.5;
   text-decoration: none;
 } */
-
 
 /* Animações nos cards */
 .card {
@@ -165,17 +163,23 @@
   font-family: monospace;
 
   flex-direction: column;
-}
-
-.card-inner i {
-  background-color: #52525218;
-  color: #996113;
-  border-radius: 100%;
-  width: max-content;
+/* quando colocamos & dentro de qualquer tag, significa que ele herdará tudo que tiver dentro da tag */
+  & i { 
+    background-color: #52525218;
+    color: #996113;
+    border-radius: 100%;
+    width: max-content;
+  }
 }
 
 @keyframes rotate16 {
   to {
     transform: rotate(360deg);
+  }
+}
+
+#MAPEAMENTO {
+  & img {
+    border-radius: 50%;
   }
 }

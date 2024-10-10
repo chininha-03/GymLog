@@ -1,14 +1,5 @@
 /* Envolve-se a estrutura da página de erro */
-.divMaster {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f8ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
+
 
 .error-container {
   text-align: center;

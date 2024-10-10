@@ -46,7 +46,10 @@ function BotaoConfirmar() {
           </p>
           <br />
           <Link to={"/cadNome"}>
-            <button className="btn-confirmarCadSex btnConfirmacao-Intro" onClick={handleConfirm}>
+            <button
+              className="btn-confirmarCadSex btnConfirmacao-Intro"
+              onClick={handleConfirm}
+            >
               <h7>Confirmar</h7>
             </button>
           </Link>
