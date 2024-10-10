@@ -1,16 +1,9 @@
-import React, { useState } from "react";
-import "./CadastroNome.css"
-import { ThemeProvider } from "../../../components/DarkOrLightTheme/ProvedorTema/ProvedorTema";
-import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
+import React from 'react'
 
 const CadastroNome = () => {
   return (
-    <>
-      <div>
-        
-      </div>
-    </>
-  );
-};
+    <div>CadastroNome</div>
+  )
+}
 
-export default CadastroNome;
+export default CadastroNome

@@ -17,6 +17,7 @@ import CadastroSexo from "./routes/Cadastro/CadastroSexo/CadastroSexo.jsx";
 import Home from "./routes/login/Home.jsx";
 import ErrorPage from "./routes/ErrorPage/Error.jsx";
 import CadastroNome from "./routes/Cadastro/CadastroNome/CadastroNome.jsx";
+import CadastroInfo from "./routes/Cadastro/CadastroInfo/CadastroInfo.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
       { path: "/cadSexo", element: <CadastroAtv /> },
       { path: "/cadAtiv", element: <CadastroSexo /> },
       { path: "/cadNome", element: <CadastroNome /> },
+      { path: "/cadInfo", element: <CadastroInfo /> },
     ],
   },
 ]);
