@@ -2,55 +2,42 @@ import React, { useState } from "react";
 import "./CadastroAtv.css";
 import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
 import Footer from "../../../components/Footer/Footer";
-import { Link } from "react-router-dom";
 
-//
+// import CadSexo from '../CadastroSexo/CadastroSexo.jsx'
+// import CadastroSexo from "../CadastroSexo/CadastroSexo.jsx";
 
-function BotaoConfirmar() {
-  const [isConfirmButtonVisible, setIsConfirmButtonVisible] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const handleButtonClick = (option) => {
-    setSelectedOption(option);
-    setIsConfirmButtonVisible(true);
-  };
-
-  const handleConfirm = () => {
-    // Handle confirmation logic here
-    console.log(`Confirmed option: ${selectedOption}`);
-  };
+const CadastroAtv = () => {
+ 
 
   return (
     <>
-      <div className="divBtn-Acionar">
-        <button
-          className="UseBtn"
-          onClick={() => handleButtonClick("Sedentário")}
-        >
-          <span>Sedentário</span>
-        </button>
-        <button
-          className="UseBtn"
-          onClick={() => handleButtonClick("Pouco Ativo")}
-        >
-          <span>Pouco Ativo</span>
-        </button>
-        <button className="UseBtn" onClick={() => handleButtonClick("Ativo")}>
-          <span>Ativo</span>
-        </button>
-      </div>
-      {isConfirmButtonVisible && (
-        <>
-          <p className="textBtn-CadSex">
-            Você selecionou: <strong>{selectedOption}</strong>
-          </p>
-          <br />
-          <Link to={"/cadNome"}>
-            <button
-              className="btn-confirmarCadSex btnConfirmacao-Intro"
-              onClick={handleConfirm}
-            >
-              <h7>Confirmar</h7>
+      <BasicHeader />
+ 
+      <div className="cadAtv-master">
+        <div className="cadAtv-text ">
+          <h3 className="">Qual é o seu sexo biologico?</h3>
+          <h5>
+            Seu sexo biologico determmina as necessecidades energeticas do seu
+            corpo, <br />
+            sua resposta será utilizada para realizar o calculo da taxa
+            metabolica basal{" "}
+          </h5>
+        </div>
+        <div className="cadAtv-escolhaSexo">
+          <div className="sex rotate-vert-center">
+            <button className="sexMasc">
+              <Link to={"/cadAtiv"}>
+                <i className="bi bi-gender-male"></i>
+                <h3>Masculino</h3>
+              </Link>
+            </button>
+          </div>
+          <div className="sex rotate-vert-center-2">
+            <button className="sexFem">
+              <Link to={"/cadAtiv"}>
+                <i class="bi bi-gender-female"></i>
+                <h3>Feminino</h3>
+              </Link>
             </button>
           </div>
         </div>

@@ -133,7 +133,6 @@
 }
 /* -------------------------------------------------------------------- */
 
-
 /* Alterações principalmente no cad do sexoMasculino */
 .sexMasc {
   box-shadow: inset 0 0 0 0 #9dbdff;
@@ -190,7 +189,6 @@
   line-height: 1.5;
   text-decoration: none;
 } */
-
 
 /* Animações nos cards */
 .card {
@@ -255,19 +253,26 @@
   height: 20em;
   left: -5em;
   text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
+  font-family: monospace;
 
-  color: blue;
+  flex-direction: column;
+/* quando colocamos & dentro de qualquer tag, significa que ele herdará tudo que tiver dentro da tag */
+  & i { 
+    background-color: #52525218;
+    color: #996113;
+    border-radius: 100%;
+    width: max-content;
+  }
 }
 
-.btn-confirmarCadSex:hover {
-  color: #fff;
-  border: 1px solid #ff9100;
-  background-color: #ff9100;
+@keyframes rotate16 {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.btn-confirmarCadSex:hover::before {
-  box-shadow: inset 0 0 0 10em #ff9100;
+#MAPEAMENTO {
+  & img {
+    border-radius: 50%;
+  }
 }
-/* ---------------------------------------------------------------------- */
