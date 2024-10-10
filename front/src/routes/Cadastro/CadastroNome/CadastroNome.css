@@ -1,0 +1,65 @@
+.cadNome-master {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 79vh;
+    background-color: #D9D9D9;
+  /* height: 100vh; */
+    min-width: fit-content;
+ 
+  }
+  .cardNameFt {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color:#fff;
+    width:758px;
+    height: 647px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  
+    align-items: center;
+    border-radius: 10px;
+  }
+
+.roda-Fto{
+background-color: #D9D9D9;
+width: 180px;
+height: 180px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100%;
+}
+.roda-Fto i{
+font-size: 160px;
+color: #D87F00;
+}
+.cadNome-master h1{
+    width: 100%;
+   
+    padding-left: 140px;
+}
+.cardinpt{
+    width: 100%;
+   
+    padding-left: 140px;
+}
+.cardinpt input{
+  width: 500px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  color: black;
+  border-color: #D87F00;
+  
+}
+.cardbtnnn{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
