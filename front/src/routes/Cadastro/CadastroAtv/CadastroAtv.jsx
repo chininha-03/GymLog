@@ -52,6 +52,30 @@ function BotaoConfirmar() {
             >
               <h7>Confirmar</h7>
             </button>
+          </div>
+        </div>
+
+        {/* <div className="cadAtv-escolhaSexo">
+          <a href="#">
+          <div class="card">
+              <div class="card-overlay"></div>
+              <div class="card-inner">
+              <i class="bi bi-gender-male"></i>
+              <h4>Masculino</h4>
+              </div>
+              </div>
+              </a>
+              
+              <a href="#">
+              <div class="card">
+              <div class="card-overlay"></div>
+              <div class="card-inner">
+              <i class="bi bi-gender-female"></i>
+              <h4>Feminino</h4>
+              </div>
+              </div>
+              </a>
+            </div> */}
           </Link>
         </>
       )}

@@ -6,6 +6,8 @@ import "./index.css";
 
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap/dist/js/bootstrap";
+import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -17,6 +19,11 @@ import CadastroSexo from "./routes/Cadastro/CadastroSexo/CadastroSexo.jsx";
 import Home from "./routes/login/Home.jsx";
 import ErrorPage from "./routes/ErrorPage/Error.jsx";
 import CadastroNome from "./routes/Cadastro/CadastroNome/CadastroNome.jsx";
+import CadastroInfo from "./routes/Cadastro/CadastroInfo/CadastroInfo.jsx";
+import CadastroSexo from "./routes/Cadastro/CadastroSexo/CadastroSexo.jsx";
+import Home from "./routes/login/Home.jsx";
+import ErrorPage from "./routes/ErrorPage/Error.jsx";
+import CadastroNome from "./routes/Cadastro/CadastroNome/CadastroNome.jsx";
 import Testeheader from "./routes/Deletar/testeheader.jsx";
 
 const router = createBrowserRouter([
@@ -24,13 +31,19 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
+      { path: "/", element: <Home /> },
       { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/cadSexo", element: <CadastroAtv /> },
       { path: "/teste", element: <Testeheader /> },
       { path: "/cadAtiv", element: <CadastroSexo /> },
       { path: "/cadNome", element: <CadastroNome /> },
+      { path: "/cadSexo", element: <CadastroAtv /> },
+      { path: "/cadAtiv", element: <CadastroSexo /> },
+      { path: "/cadNome", element: <CadastroNome /> },
+      { path: "/cadInfo", element: <CadastroInfo /> },
     ],
   },
 ]);
