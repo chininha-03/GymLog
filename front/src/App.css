@@ -1,0 +1,41 @@
+:root {
+  --bgFundo: #f0f8ff;
+  --bgCabecalho: white;
+  --texto: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgFundo: #191a1c;
+    --bgCabecalho: #1f2022;
+    --texto: white;
+  }
+}
+
+.divMaster {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bgFundo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.btnInteracao h3,
+.btnInteracao a {
+  color: var(--texto) !important;
+}
+
+.btnInteracao button {
+  color: var(--texto);
+}
+
+.divHeader {
+  background-color: var(--bgCabecalho) !important;
+}
+
+.row > * {
+  background-color: var(--bgFundo);
+}

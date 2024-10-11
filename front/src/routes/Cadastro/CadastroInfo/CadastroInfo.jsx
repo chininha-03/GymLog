@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./CadastroInfo.css";
 
 import "./CadastroInfo.css";
-import { ThemeProvider } from "../../../components/DarkOrLightTheme/ProvedorTema/ProvedorTema";
 import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
 import Footer from "../../../components/Footer/Footer";
 
