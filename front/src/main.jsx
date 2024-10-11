@@ -67,6 +67,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+// Primeiras páginas de cadastro 
 import Login from "./routes/login/Login.jsx";
 import CadastroAtv from "./routes/Cadastro/CadastroAtv/CadastroAtv.jsx";
 import CadastroSexo from "./routes/Cadastro/CadastroSexo/CadastroSexo.jsx";
@@ -74,6 +75,14 @@ import Home from "./routes/login/Home.jsx";
 import ErrorPage from "./routes/ErrorPage/Error.jsx";
 import CadastroNome from "./routes/Cadastro/CadastroNome/CadastroNome.jsx";
 import CadastroInfo from "./routes/Cadastro/CadastroInfo/CadastroInfo.jsx";
+
+// Páginas com todo o conteúdo 
+import Treino from "./routes/Pages/Treino/Treino.jsx";
+import Rotina from "./routes/Pages/Rotinas/Rotina.jsx";
+import Perfil from "./routes/Pages/Perfil/Perfil.jsx";
+import Loja from "./routes/Pages/Loja/Loja.jsx";
+import Exercicios from "./routes/Pages/Exercicios/Exercicios.jsx";
+import Configuracoes from "./routes/Pages/Configuracoes/Configuracoes.jsx";
 
 const router = createBrowserRouter([
   {
@@ -88,6 +97,13 @@ const router = createBrowserRouter([
       { path: "/cadAtiv", element: <CadastroSexo /> },
       { path: "/cadNome", element: <CadastroNome /> },
       { path: "/cadInfo", element: <CadastroInfo /> },
+
+      { path: "/treino", element: <Treino /> },
+      { path: "/rotina", element: <Rotina /> },
+      { path: "/perfil", element: <Perfil /> },
+      { path: "/loja", element: <Loja /> },
+      { path: "/exercicio", element: <Exercicios /> },
+      { path: "/configuracoes", element: <Configuracoes /> },
     ],
   },
 ]);

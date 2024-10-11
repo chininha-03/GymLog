@@ -1,3 +1,5 @@
+// NESTE HEADER UTILIZAMOS APENAS PARA AS TELAS DE CADASTRO
+
 import React from "react";
 import "./BasicHeader.css";
 
