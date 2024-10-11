@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
 import LoginExtensa from "../../assets/logoExtensa.svg";
 import ImgLogin from "../../assets/imgLogin.png";
 import axios from "axios";
-
+import { useGoogleLogin } from "@react-oauth/google";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -29,6 +29,50 @@ const Login = () => {
     }
   };
 
+  //autentificação do google
+  // const responseGoogle =(response)=>{
+  // console.log(response)
+  // }
+  const [user, setUser] = useState(null);
+
+  const handleLogin = () => {
+    // URL de autenticação do Google (substitua por sua URL)
+    const googleAuthUrl = "https://accounts.google.com/o/oauth2/v2/auth?";
+    const clientId =
+      "403831315372-7g18g5pat3tk1o32mipjmrj1p0g9r4qv.apps.googleusercontent.com"; // Substitua pelo seu Client ID do Google
+    const redirectUri = "http://localhost:8080"; // URL de redirecionamento da sua aplicação
+    const scope = "profile email";
+
+    const url = `${googleAuthUrl}client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=code&prompt=consent`;
+
+    window.open(url, "_blank");
+  };
+
+  useEffect(() => {
+    // Verificar se há um código de autorização na URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get("code");
+    if (code) {
+      // Aqui você faria uma requisição para o seu backend
+      // para trocar o código de autorização por um token de acesso
+      // e obter as informações do usuário
+      fetch("/api/google-login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ code }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setUser(data);
+        })
+        .catch((error) => {
+          console.error("Erro ao obter informações do usuário:", error);
+        });
+    }
+  }, []);
+
   return (
     <>
       <div className="row conti divMaster">
@@ -45,8 +89,19 @@ const Login = () => {
             >
               <div className="btnInteracao">
                 <h3>LogIn</h3>
-                <button className="btn btn-outline-secondary m-2">
-                  <i className="bi bi-google "></i>
+
+                {/* <useGoogleLogin 
+               clienteId="403831315372-7g18g5pat3tk1o32mipjmrj1p0g9r4qv.apps.googleusercontent.com"
+               buttonText="Continuar com o Google"
+               onSuccess={responseGoogle}
+               onFailure={responseGoogle}
+               /> */}
+
+                <button
+                  onClick={handleLogin}
+                  className="btn btn-outline-secondary m-2"
+                >
+                  <i class="bi bi-google "></i>
                   <a href="#" className="ps-4 fw-semibold">
                     Login com Google
                   </a>
@@ -105,6 +160,7 @@ const Login = () => {
               <button type="submit" className="btn btn-outline-primary">
                 Entrar
               </button>
+              <div></div>
             </form>
 
             <img
