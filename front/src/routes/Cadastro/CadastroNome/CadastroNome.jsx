@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./CadastroNome.css";
-import { ThemeProvider } from "../../../components/DarkOrLightTheme/ProvedorTema/ProvedorTema";
 import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
 import Footer from "../../../components/Footer/Footer";
 import Buton1 from "../../../components/buton1/buton1";

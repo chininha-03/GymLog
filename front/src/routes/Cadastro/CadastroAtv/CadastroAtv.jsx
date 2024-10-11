@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CadastroAtv.css";
+import { Link } from "react-router-dom";
 import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
 import Footer from "../../../components/Footer/Footer";
 
@@ -7,12 +8,10 @@ import Footer from "../../../components/Footer/Footer";
 // import CadastroSexo from "../CadastroSexo/CadastroSexo.jsx";
 
 const CadastroAtv = () => {
- 
-
   return (
     <>
       <BasicHeader />
- 
+
       <div className="cadAtv-master">
         <div className="cadAtv-text ">
           <h3 className="">Qual é o seu sexo biologico?</h3>
@@ -63,20 +62,6 @@ const CadastroAtv = () => {
               </div>
               </a>
             </div> */}
-          </Link>
-        </>
-      )}
-    </>
-  );
-}
-
-const CadastroSexo = () => {
-  return (
-    <>
-      <BasicHeader />
-      <div className="divMasterCadSex">
-        <h3>Qual é o seu nível de Atividade?</h3>
-        <BotaoConfirmar />
       </div>
       <footer>
         <Footer />
@@ -85,4 +70,4 @@ const CadastroSexo = () => {
   );
 };
 
-export default CadastroSexo;
+export default CadastroAtv;

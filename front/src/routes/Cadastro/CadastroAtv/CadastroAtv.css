@@ -1,85 +1,44 @@
-
-
-
-
-
-
-/* Animação no botão confirmar */
-@-webkit-keyframes btnConfirmacao-Intro {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-@keyframes btnConfirmacao-Intro {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    opacity: 1;
-  }
-}
-.btnConfirmacao-Intro {
-  -webkit-animation: btnConfirmacao-Intro 0.5s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
-  animation: btnConfirmacao-Intro 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s
-    both;
-}
-/* -------------------------------------------------------------------- */
-
-/* Div Master do cadastroSexo, esta é a div que fica por cima de tudo */
-.divMasterCadSex {
+/* Div princpal do arquivo: ajustes geral */
+.cadAtv-master {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
+  min-height: 75vh;
+  /* height: 100%; */
+  min-width: fit-content;
+  /* margin-bottom: 100px; */
 }
 
-/* Div presente nos botões que está sobre tudo, ou melhor, atrás de tudo :) */
-.divBtn-Acionar {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: rgb(36, 37, 38);
-  width: 500px;
-  height: 400px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  align-items: center;
-  border-radius: 10px;
+/* Div dos textos: Estilizando e ajustando os textos */
+.cadAtv-text {
+  text-align: center;
+  margin: 10px;
 }
 
-/* Alteração nos botões de uma forma geral */
-.divBtn-Acionar button {
-  width: 400px;
-  height: 50px;
-  border-radius: 20px;
+.cadAtv-text h3 {
+  margin: 0 0 20px 0;
+  font-weight: 900;
+  font-size: 35px;
+
+  color: orange;
+}
+
+.cadAtv-text h5 {
+  margin: 0 0 20px 0;
+  font-weight: 650;
+  font-size: 25px;
 }
 /* ------------------------------------------------- */
 
 /* Div master dos cards da escolha dos sexos */
 .cadAtv-escolhaSexo {
-/* Deixando os botões(botões de atividade) mais bonitos com efeitos e muito mais... */
-.UseBtn {
-  background: transparent;
-  position: relative;
-  padding: 5px 15px;
   display: flex;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
+  flex-direction: row;
+  gap: 350px;
+}
+
+.cadAtv-escolhaSexo a {
   text-decoration: none;
   color: #000;
 }
@@ -115,21 +74,6 @@
   color: #fff;
   box-shadow: inset 200px 0 0 0 #ffb0b0;
   border-radius: 19px;
-  cursor: pointer;
-  border: 1px solid #ff9100;
-  border-radius: 25px;
-  outline: none;
-  overflow: hidden;
-  /* color: rgb(10, 10, 10); */
-  color: #ff9100;
-  transition: color 0.3s 0.1s ease-out;
-  text-align: center;
-
-  justify-content: center;
-}
-
-.UseBtn span {
-  margin: 10px;
 }
 /* -------------------------------------------------------------------- */
 
@@ -157,22 +101,6 @@
   margin: 0 -0.25rem;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-radius: 19px;
-.UseBtn::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: "";
-  border-radius: 50%;
-  display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
-  text-align: center;
-  transition: box-shadow 0.5s ease-out;
-  z-index: -1;
 }
 .sex button:hover {
   color: #fff;
@@ -195,63 +123,42 @@
   --bg: #e8e8e8;
   --contrast: #e2e0e0;
   --grey: #93a1a1;
-
-.UseBtn:hover {
-  color: #ffffff;
-  border: 1px solid #ff9100;
-  background-color: #ff9100;
-}
-
-.UseBtn:hover::before {
-  box-shadow: inset 0 0 0 10em #ff9100;
-}
-/* ---------------------------------------------------------------------- */
-
-/* Estilizando o texto de confirmação */
-.textBtn-CadSex {
-  font-size: 15px;
-  /* font-weight: 700; */
-  margin: 0;
-}
-
-/* Deixando o botão(confirmar) mais bonito com efeitos e muito mais... */
-.btn-confirmarCadSex {
-  background: transparent;
   position: relative;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-  font-size: 17px;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  border: 1px solid #ff9100;
-  border-radius: 25px;
-  outline: none;
-  overflow: hidden;
-  /* color: rgb(10, 10, 10); */
-  color: #ff9100;
-  transition: color 0.3s 0.1s ease-out;
-  text-align: center;
-  color: #000;
-
-  justify-content: center;
-  text-decoration: underline;
+  padding: 9px;
+  background-color: var(--bg);
+  border-radius: 35px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.btn-confirmarCadSex::before {
+.card-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  content: "";
-  border-radius: 50%;
-  display: block;
-  width: 20em;
-  height: 20em;
-  left: -5em;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-conic-gradient(
+      var(--bg) 0.0000001%,
+      var(--grey) 0.000104%
+    )
+    60% 60%/600% 600%;
+  filter: opacity(10%) contrast(105%);
+}
+
+.card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 190px;
+  height: 254px;
+  background-color: var(--contrast);
+  border-radius: 30px;
+  /* Content style */
+  font-size: 30px;
+  font-weight: 900;
+  color: #000;
   text-align: center;
   font-family: monospace;
 
