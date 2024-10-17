@@ -3,9 +3,10 @@
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 18%;
   padding: 10px;
 align-items: center;
+/* border-right: 2px solid black; */
 }
 .MasterHeader input{
     background-color: #D9D9D9;
@@ -64,7 +65,7 @@ height: 100%;
 
   }
  .saida{
-    width: 300px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     align-items: center;
