@@ -12,8 +12,8 @@ const BasicHeader = () => {
   return (
     <>
       <div className="divHeader">
-        <button onClick={() => navigate(-1)} class="btn btn-outline-dark ms-4">
-          <i class="bi bi-arrow-left"></i>
+        <button onClick={() => navigate(-1)} className="btn btn-outline-dark ms-4">
+          <i className="bi bi-arrow-left"></i>
         </button>
         <img
           src={logoExtensa}

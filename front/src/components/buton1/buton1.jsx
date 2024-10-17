@@ -6,7 +6,7 @@ const Buton1 = () => {
   return (
     <div>
       <div className="rodela">
-        <i class="bi bi-arrow-right"></i>
+        <i className="bi bi-arrow-right"></i>
       </div>
     </div>
   );
