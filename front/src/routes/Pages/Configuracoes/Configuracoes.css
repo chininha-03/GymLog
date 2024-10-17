@@ -1,0 +1,25 @@
+.links-config {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  /* margin-left: 10px; */
+list-style: none;
+  align-items: center;
+}
+
+.links-config li {
+  padding: 5px;
+  text-decoration: none;
+}
+
+.idio-config {
+  padding: 0px !important;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.link-direct {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}

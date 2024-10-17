@@ -83,6 +83,7 @@ import Perfil from "./routes/Pages/Perfil/Perfil.jsx";
 import Loja from "./routes/Pages/Loja/Loja.jsx";
 import Exercicios from "./routes/Pages/Exercicios/Exercicios.jsx";
 import Configuracoes from "./routes/Pages/Configuracoes/Configuracoes.jsx";
+import ConfigPerfil from "./routes/Pages/Configuracoes/RotasConfig/ConfigPerfil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -104,6 +105,11 @@ const router = createBrowserRouter([
       { path: "/loja", element: <Loja /> },
       { path: "/exercicio", element: <Exercicios /> },
       { path: "/configuracoes", element: <Configuracoes /> },
+      //configurações
+      { path: "/confPerfil", element: <ConfigPerfil /> },
+      { path: "/configuracoes", element: <Configuracoes /> },
+      { path: "/configuracoes", element: <Configuracoes /> },
+
     ],
   },
 ]);
