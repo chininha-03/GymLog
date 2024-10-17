@@ -86,12 +86,12 @@ const Perfil = () => {
         <HeaderPrimario />
         <div className="container">
           <div className="profile-header">
-            <div className="fotosPerfilAndPaisagem position-relative ">
+            <div className="fotosPerfilAndPaisagem position-relative col-lg-12">
               <ImagemPaisagem />
               <FotoPerfil />
             </div>
           </div>
-          <div className="profile-info">
+          <div className="profile-info col-10">
             <h1 className="profile-name">Paulo Joca</h1>
             <p className="profile-bio">
               Apaixonado por fitness e vida saudável. Treinador pessoal e

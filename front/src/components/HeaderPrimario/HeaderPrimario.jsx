@@ -16,7 +16,7 @@ const HeaderPrimario = () => {
           <input type="text" name="" id="" />
         </div>
         <div>
-          <Link to={"/treinos"}>
+          <Link to={"/treino"}>
             <h2></h2>
             <button className="biti">
               {" "}
@@ -25,7 +25,7 @@ const HeaderPrimario = () => {
           </Link>
         </div>
         <div>
-          <Link to={"/rotinas"}>
+          <Link to={"/rotina"}>
             <button className="biti">
               <i className="bi bi-clipboard-minus"></i>
               <h2>Rotinas</h2>
