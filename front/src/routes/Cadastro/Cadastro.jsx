@@ -13,6 +13,9 @@ const Cadastro = () => {
   const { user } = location.state;
   console.log(user);
 
+  const usuario = location.state?.usuario || {};
+  console.log(usuario);
+
   return (
     <>
       <BasicHeader />

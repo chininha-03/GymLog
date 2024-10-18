@@ -87,8 +87,8 @@
 }
 
 .form-SingIn label .input-SignIn {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #111;
   width: 100%;
   padding: 20px 05px 05px 10px;
   outline: 0;
@@ -97,7 +97,7 @@
 }
 
 .form-SingIn label .input-SignIn + span {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 10px;
   top: 0px;
@@ -113,7 +113,7 @@
 
 .form-SingIn label .input-SignIn:focus + span,
 .form-SingIn label .input-SignIn:valid + span {
-  color: #333;
+  color: #111;
   top: 0px;
   font-size: 0.7em;
   font-weight: 600;

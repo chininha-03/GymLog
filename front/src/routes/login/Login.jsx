@@ -3,7 +3,7 @@ import "./Login.css";
 import LoginExtensa from "../../assets/logoExtensa.svg";
 import ImgLogin from "../../assets/imgLogin.png";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth, provider, signInWithPopup } from "./fireBase"; // Importações do Firebase configurado
 
 const Login = () => {
@@ -54,7 +54,7 @@ const Login = () => {
               displayName: null,
               photoURL: null,
               contUser: 1,
-              Alt: null, 
+              Alt: null,
               peso: null,
               idade: null,
             },
@@ -87,11 +87,6 @@ const Login = () => {
               >
                 <i className="bi bi-google"></i>
                 <span className="ps-4 fw-semibold">Login com Google</span>
-              </button>
-
-              <button className="btn btn-outline-secondary mb-5">
-                <i className="bi bi-apple"></i>
-                <span className="ps-4 fw-semibold">Login com Apple</span>
               </button>
             </div>
 
@@ -143,6 +138,11 @@ const Login = () => {
             <button type="submit" className="btn btn-outline-primary">
               Entrar
             </button>
+            <Link to="/singin" className="mt-5">
+              <button type="button" className="btn btn-outline-primary w-100">
+                Criar Conta
+              </button>
+            </Link>
           </form>
 
           <img className="img-fluid col-lg-6" src={ImgLogin} alt="GymLog" />

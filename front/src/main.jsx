@@ -28,6 +28,8 @@ import Loja from "./routes/Pages/Loja/Loja.jsx";
 import Exercicios from "./routes/Pages/Exercicios/Exercicios.jsx";
 import Configuracoes from "./routes/Pages/Configuracoes/Configuracoes.jsx";
 import Cadastro from "./routes/Cadastro/Cadastro.jsx";
+import SingIn from "./routes/login/SignIN/SingIn.jsx";
+import ConfigPerfil from "./routes/Pages/Configuracoes/RotasConfig/ConfigPerfil.jsx";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +57,6 @@ const router = createBrowserRouter([
       { path: "/confPerfil", element: <ConfigPerfil /> },
       { path: "/configuracoes", element: <Configuracoes /> },
       { path: "/configuracoes", element: <Configuracoes /> },
-
     ],
   },
 ]);
