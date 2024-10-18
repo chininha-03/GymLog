@@ -1,13 +1,41 @@
-.MasterHeader {
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 18%;
-  padding: 10px;
-  align-items: center;
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
-.MasterHeader input {
+
+.header {
+  display: flex;
+  position: absolute;
+}
+
+/* Header fixo no topo (apenas para dispositivos móveis) */
+.top-header {
+  display: flex; /* Mostrar por padrão */
+  width: 100%;
+  height: 80px;
+  background-color: #ffff;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  padding-right: 30px;
+  padding-left: 30px;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Certifique-se de que está acima da sidebar */
+}
+
+.top-logo {
+  width: 50px; /* Tamanho da logo no topo */
+  margin-left: 10px;
+}
+
+.top-icons {
+  display: flex;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.sidebar input {
   background-color: #d9d9d9;
   width: 222px;
   height: 44px;
@@ -15,14 +43,10 @@
   display: block;
   border-radius: 9px;
 }
-.searc i {
-  display: flex;
-  z-index: 1;
-}
 .biti {
   color: #090909;
   padding: 0.7em 1.7em;
-  width: 240px;
+  width: 85%;
   font-size: 18px;
   border-radius: 0.5em;
   background: #fff;
@@ -58,16 +82,15 @@
   height: 100%;
 }
 .saida {
-  width: 300px;
+  width: 280px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-left: 30px;
   border-top: 2px solid black;
-
   margin-right: 30px;
 }
-/* .said{
+ .said{
     font-size: 40px;
   }
   .saida h2{
@@ -75,8 +98,180 @@
   }
   .sain{
     font-size: 20px;
-  } */
+  } 
 
-link{
-  text-decoration: none;
+/* Sidebar para telas normais */
+.sidebar {
+  width: 280px;
+  height: 100vh; /* Altura 100% da tela */
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff; /* Cor de fundo da sidebar */
+  position: fixed; /* Sidebar fixa */
+ 
+  
+}
+
+.logo {
+  width: 100%; /* Logo ocupa a largura total */
+  margin-bottom: 10px;
+}
+
+.search-input {
+  margin-bottom: 10px;
+}
+
+.button-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-button,
+.mobile-button {
+  margin: 5px 0;
+}
+
+.footeri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Coloca a footer no final da sidebar */
+}
+
+/* Menu que aparece no mobile */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 50px; /* Abaixo do header */
+  left: 0;
+  height: 570px;
+  width: 50%;
+  background-color: #f0f0f0;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Esconder sidebar em dispositivos móveis */
+  }
+}
+.loginho{
+  width: 70px;
+}
+/* From Uiverse.io by MijailVillegas */ 
+.cardes {
+  max-width: fit-content;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 30px;
+  height: 380px;
+  backdrop-filter: blur(15px);
+background-color: #fff;
+  transition: 0.5s;
+}
+
+.cardes:hover {
+  animation: ease-out 5s;
+  /* background: rgba(255, 255, 255, 0.352); */
+}
+
+.cardes ul {
+  padding: 1rem;
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.cardes ul li {
+  cursor: pointer;
+}
+
+.cardes i {
+  transition: all 0.3s;
+  /* if you find some problems change w - h : 30px*/
+  padding: 1rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  color: #FE9602;
+  fill: currentColor;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+}
+
+.text {
+  opacity: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px;
+  transition: all 0.3s;
+  color: #FE9602;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  z-index: 9999;
+  box-shadow: -5px 0 1px rgba(153, 153, 153, 0.2),
+    -10px 0 1px rgba(153, 153, 153, 0.2),
+    inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.082);
+}
+
+/*isometric prooyection*/
+.iso-pro {
+  transition: 0.5s;
+}
+.iso-pro:hover a > .svg {
+  transform: translate(15px, -15px);
+  border-radius: 100%;
+}
+
+.iso-pro:hover .text {
+  opacity: 1;
+  transform: translate(25px, -2px) skew(-5deg);
+}
+
+.iso-pro:hover .svg {
+  transform: translate(5px, -5px);
+}
+
+.iso-pro span {
+  opacity: 0;
+  position: absolute;
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3),
+    inset 0 0 5px rgba(255, 255, 255, 0.5), 0 5px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 50%;
+  transition: all 0.3s;
+  height: 60px;
+  width: 60px;
+}
+
+.iso-pro:hover span {
+  opacity: 1;
+}
+
+.iso-pro:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+
+.iso-pro:hover span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+
+.iso-pro:hover span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
 }

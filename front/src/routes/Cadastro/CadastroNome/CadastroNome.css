@@ -63,3 +63,17 @@ color: #D87F00;
   justify-content: flex-end;
   padding-right: 40px;
 }
+.rodela{
+  width: 62px;
+  height: 38px;
+  background-color: #D87F00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-radius: 9px;
+}
+
+.rodela i{
+  color: #fff;
+  font-size: 30px;
+}
