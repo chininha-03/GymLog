@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-
-import "./CadastroInfo.css";
-
+import { useNavigate, useLocation } from "react-router-dom";
 import "./CadastroInfo.css";
 import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
 import Footer from "../../../components/Footer/Footer";
 
-// FAZENDO OS INPUTS COM LIMITAÇÕES
-
-function InputIdade() {
-  const [idade, setIdade] = useState("");
+// Componentes dos inputs
+function InputIdade({ idade, setIdade }) {
   const [erro, setErro] = useState("");
 
   const handleChange = (event) => {
@@ -38,26 +34,24 @@ function InputIdade() {
   );
 }
 
-function Inputpeso() {
-  const [peso, setpeso] = useState("");
+function InputPeso({ peso, setPeso }) {
   const [erro, setErro] = useState("");
 
   const handleChange = (event) => {
     const valor = event.target.value;
-    const pesoNumerica = parseInt(valor);
+    const pesoNumerico = parseFloat(valor);
 
-    if (isNaN(pesoNumerica) || pesoNumerica < 0 || pesoNumerica > 280) {
+    if (isNaN(pesoNumerico) || pesoNumerico < 0 || pesoNumerico > 280) {
       setErro("Por favor, digite um número entre 0 e 280.");
     } else {
       setErro("");
-      setpeso(valor);
+      setPeso(valor);
     }
   };
 
   return (
     <div>
       <input
-        // step="0.1"
         className="inputbox-CadInfo"
         type="number"
         value={peso}
@@ -69,15 +63,14 @@ function Inputpeso() {
   );
 }
 
-function InputAltura() {
-  const [Altura, setAltura] = useState("");
+function InputAltura({ altura, setAltura }) {
   const [erro, setErro] = useState("");
 
   const handleChange = (event) => {
     const valor = event.target.value;
-    const AlturaNumerica = parseInt(valor);
+    const alturaNumerica = parseFloat(valor);
 
-    if (isNaN(AlturaNumerica) || AlturaNumerica < 0 || AlturaNumerica > 280) {
+    if (isNaN(alturaNumerica) || alturaNumerica < 0 || alturaNumerica > 280) {
       setErro("Por favor, digite um número entre 0 e 280.");
     } else {
       setErro("");
@@ -88,55 +81,72 @@ function InputAltura() {
   return (
     <div>
       <input
-        // step="0.1"
         className="inputbox-CadInfo"
         type="number"
-        value={Altura}
+        value={altura}
         onChange={handleChange}
-        placeholder="Digite seu Altura (Kg)"
+        placeholder="Digite sua Altura (cm)"
       />
       {erro && <p>{erro}</p>}
     </div>
   );
 }
-// --------------------------------------------------------------------------- //
 
 const CadastroInfo = () => {
-  return (
-    <>
-      <div>
-        <BasicHeader />
-        <div className="divMaster-CadInfo">
-          <img src="https://placehold.co/309x683" alt="" className="col-3 col-lg-3 col-md-6 col-sm-6" />
-          <div className="formMaster-CadInfo">
-            <form className="col-6 col-lg-6 col-md-4 col-sm-3">
-              <label class="inputbox-CadInfo">
-                <InputAltura />
-              </label>
-              <br />
-              <br />
-              <label class="inputbox-CadInfo">
-                <Inputpeso />
-              </label>
-              <br />
-              <br />
-              <label class="inputbox-CadInfo">
-                <InputIdade />
-                <p id="mensagem"></p>
-              </label>
-              <br /> <br />
-              <button className="btn-do-marcus">
-                <h3>Btn marcus</h3>
-              </button>
-            </form>
-          </div>
-        </div>
+  const [idade, setIdade] = useState("");
+  const [peso, setPeso] = useState("");
+  const [altura, setAltura] = useState("");
+  const location = useLocation();
+  const { user } = location.state;
+  const navigate = useNavigate();
 
-        <footer>
-          <Footer />
-        </footer>
+  const handleNext = () => {
+    // Incrementar contUser e enviar as informações capturadas para a próxima tela
+    const updatedUser = {
+      ...user,
+      altura: altura,
+      peso: peso,
+      idade: idade,
+      contUser: (user.contUser || 0) + 1, // Incrementa contUser
+    };
+
+    navigate("/cadastro", {
+      state: { user: updatedUser },
+    });
+    console.log(updatedUser);
+  };
+
+  return (
+    <div>
+      <div className="divMaster-CadInfo">
+        <img
+          src="https://placehold.co/309x683"
+          alt=""
+          className="col-3 col-lg-3 col-md-6 col-sm-6"
+        />
+        <div className="formMaster-CadInfo">
+          <form className="col-6 col-lg-6 col-md-4 col-sm-3">
+            <label className="inputbox-CadInfo">
+              <InputAltura altura={altura} setAltura={setAltura} />
+            </label>
+            <br />
+            <br />
+            <label className="inputbox-CadInfo">
+              <InputPeso peso={peso} setPeso={setPeso} />
+            </label>
+            <br />
+            <br />
+            <label className="inputbox-CadInfo">
+              <InputIdade idade={idade} setIdade={setIdade} />
+            </label>
+            <br /> <br />
+            <button className="rodela" onClick={handleNext}>
+              <i className="bi bi-arrow-right"></i>
+            </button>
+          </form>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
