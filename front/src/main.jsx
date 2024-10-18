@@ -108,9 +108,8 @@ const router = createBrowserRouter([
       { path: "/exercicio", element: <Exercicios /> },
       { path: "/configuracoes", element: <Configuracoes /> },
       //configurações
+      { path: "/configuracoes", element: <Configuracoes /> },
       { path: "/confPerfil", element: <ConfigPerfil /> },
-      { path: "/configuracoes", element: <Configuracoes /> },
-      { path: "/configuracoes", element: <Configuracoes /> },
 
     ],
   },

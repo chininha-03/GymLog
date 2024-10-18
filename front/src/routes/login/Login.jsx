@@ -337,7 +337,7 @@ import "./Login.css";
 import LoginExtensa from "../../assets/logoExtensa.svg";
 import ImgLogin from "../../assets/imgLogin.png";
 import axios from "axios";
-import { useNavigate } from "react-router-dom"; // Importa o hook useNavigate
+import { Link, useNavigate } from "react-router-dom"; // Importa o hook useNavigate
 import { initializeApp } from "firebase/app"; // Firebase
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth"; // Autenticação do Firebase
 
@@ -478,6 +478,12 @@ const Login = () => {
             <button type="submit" className="btn btn-outline-primary">
               Entrar
             </button>
+
+            <Link to="/singin" className="mt-5">
+              <button type="button" class="btn btn-outline-primary w-100">
+                Criar Conta
+              </button>
+            </Link>
           </form>
 
           <img className="img-fluid col-lg-6" src={ImgLogin} alt="GymLog" />
