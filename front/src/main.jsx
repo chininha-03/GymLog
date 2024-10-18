@@ -67,7 +67,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// Primeiras páginas de cadastro 
+// Primeiras páginas de cadastro
 import Login from "./routes/login/Login.jsx";
 import CadastroAtv from "./routes/Cadastro/CadastroAtv/CadastroAtv.jsx";
 import CadastroSexo from "./routes/Cadastro/CadastroSexo/CadastroSexo.jsx";
@@ -76,13 +76,14 @@ import ErrorPage from "./routes/ErrorPage/Error.jsx";
 import CadastroNome from "./routes/Cadastro/CadastroNome/CadastroNome.jsx";
 import CadastroInfo from "./routes/Cadastro/CadastroInfo/CadastroInfo.jsx";
 
-// Páginas com todo o conteúdo 
+// Páginas com todo o conteúdo
 import Treino from "./routes/Pages/Treino/Treino.jsx";
 import Rotina from "./routes/Pages/Rotinas/Rotina.jsx";
 import Perfil from "./routes/Pages/Perfil/Perfil.jsx";
 import Loja from "./routes/Pages/Loja/Loja.jsx";
 import Exercicios from "./routes/Pages/Exercicios/Exercicios.jsx";
 import Configuracoes from "./routes/Pages/Configuracoes/Configuracoes.jsx";
+import SingIn from "./routes/login/SignIN/SingIn.jsx";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Login /> },
       { path: "/login", element: <Login /> },
+      { path: "/singin", element: <SingIn /> },
       { path: "/home", element: <Home /> },
       { path: "/cadSexo", element: <CadastroAtv /> },
       { path: "/cadAtiv", element: <CadastroSexo /> },
