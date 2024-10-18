@@ -1,11 +1,6 @@
-
 .divMaster-SingIn {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(
-    90.1deg,
-    #FEFAE0 30%,
-    #ffce84 70%
-  );
+  background-image: linear-gradient(90.1deg, #fefae0 30%, #ffce84 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +70,6 @@
   text-align: center;
 }
 
-
 .flex {
   display: flex;
   width: 100%;
@@ -133,12 +127,25 @@
   transform-singin: 0.3s ease;
   background-color: orange;
   color: #333;
+  text-align: center;
+}
+
+.submit input {
+  background-color: orange;
+  border: none;
+  color: #333;
+  outline: none;
 }
 
 .submit:hover {
   background-color: #333;
   /* transform: ; */
   color: #fff;
+  & input {
+    background-color: #333;
+    /* transform: ; */
+    color: #fff;
+  }
 }
 
 @keyframes pulse {

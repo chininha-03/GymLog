@@ -146,7 +146,9 @@ const SingIn = () => {
               Concordar com os termos e condições
             </label>
           </div>
-          <input type="submit" className="submit shadow-pop-bl mb-3" />
+          <Link to="/treino" className="submit shadow-pop-bl mb-3">
+            <input type="submit" className="" />
+          </Link>
         </form>
         <footer>
           <Footer />
