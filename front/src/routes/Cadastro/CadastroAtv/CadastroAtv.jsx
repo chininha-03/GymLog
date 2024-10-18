@@ -1,17 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CadastroAtv.css";
-import { Link } from "react-router-dom";
-import BasicHeader from "../../../components/HeaderBasic/BasicHeader";
-import Footer from "../../../components/Footer/Footer";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // import CadSexo from '../CadastroSexo/CadastroSexo.jsx'
 // import CadastroSexo from "../CadastroSexo/CadastroSexo.jsx";
 
 const CadastroAtv = () => {
+  const location = useLocation();
+  const { user } = location.state;
+
+  const navigate = useNavigate();
+
+  const handleNext = (escolha) => {
+    
+    // navigation("/cadAtiv", {state:{sexo:}})
+    navigate("/cadastro", {
+      state: {
+        user: { ...user, sexo: escolha, contUser: user.contUser + 1 },
+        
+      },
+    });
+    console.log(user);
+  };
+
   return (
     <>
-      <BasicHeader />
-
       <div className="cadAtv-master">
         <div className="cadAtv-text ">
           <h3 className="">Qual é o seu sexo biologico?</h3>
@@ -24,48 +37,19 @@ const CadastroAtv = () => {
         </div>
         <div className="cadAtv-escolhaSexo">
           <div className="sex rotate-vert-center">
-            <button className="sexMasc">
-              <Link to={"/cadAtiv"}>
-                <i className="bi bi-gender-male"></i>
-                <h3>Masculino</h3>
-              </Link>
+            <button className="sexMasc" onClick={() => handleNext("Masculino")}>
+              <i className="bi bi-gender-male"></i>
+              <h3>Masculino</h3>
             </button>
           </div>
           <div className="sex rotate-vert-center-2">
-            <button className="sexFem">
-              <Link to={"/cadAtiv"}>
-                <i className="bi bi-gender-female"></i>
-                <h3>Feminino</h3>
-              </Link>
+            <button className="sexFem" onClick={() => handleNext("Feminino")}>
+              <i className="bi bi-gender-female"></i>
+              <h3>Feminino</h3>
             </button>
           </div>
         </div>
-
-        {/* <div className="cadAtv-escolhaSexo">
-          <a href="#">
-          <div class="card">
-              <div class="card-overlay"></div>
-              <div class="card-inner">
-              <i class="bi bi-gender-male"></i>
-              <h4>Masculino</h4>
-              </div>
-              </div>
-              </a>
-              
-              <a href="#">
-              <div class="card">
-              <div class="card-overlay"></div>
-              <div class="card-inner">
-              <i class="bi bi-gender-female"></i>
-              <h4>Feminino</h4>
-              </div>
-              </div>
-              </a>
-            </div> */}
       </div>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 };

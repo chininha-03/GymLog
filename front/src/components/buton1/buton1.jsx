@@ -4,11 +4,11 @@ import React from "react";
 
 const Buton1 = () => {
   return (
-    <div>
+    <button>
       <div className="rodela">
         <i className="bi bi-arrow-right"></i>
       </div>
-    </div>
+    </button>
   );
 };
 

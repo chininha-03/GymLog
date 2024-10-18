@@ -3,7 +3,12 @@ import React from "react";
 import "./Treino.css";
 import HeaderPrimario from "../../../components/HeaderPrimario/HeaderPrimario";
 import calendario from "../../../assets/calendario.png";
+import { useLocation } from "react-router-dom";
 const Treino = () => {
+  const location = useLocation();
+  const { user } = location.state;
+  // console.log(location.state
+  console.log(user.photoURL);
   const exercicios = [
     {
       id: 1,
@@ -38,23 +43,17 @@ const Treino = () => {
       tituloTreino: "Quinta bíceps/tríceps",
     },
     {
-      id: 25,
-
-      tituloTreino: "Quinta bíceps/tríceps",
-    },
-    {
-      id: 25,
+      id: 26,
 
       tituloTreino: "Quinta bíceps/tríceps",
     },
   ];
-  const user = localStorage.getItem("infos");
+  // const user = localStorage.getItem("infos");
 
-  console.log(user);
   return (
     <>
+      <HeaderPrimario />
       <div className="ContDireita">
-        <HeaderPrimario />
         <div className="total">
           <h1>Seus Treinos </h1>
           <div className="subtotal">
@@ -79,7 +78,7 @@ const Treino = () => {
                 <div className="seque">
                   <h2>Sequencia</h2>
                   <div className="seq">
-                    <i class="bi bi-fire"></i>
+                    <i className="bi bi-fire"></i>
                     <h3>x</h3>
                   </div>
                 </div>
@@ -129,26 +128,36 @@ const Treino = () => {
           </div>
         </div>
         <div className="conts">
-          <div id="">
-            <h1>Perfil</h1>
-            <h2>seus treinos</h2>
-            {treinos.map((item) => (
-              <div
-                key={item.id}
-                className="d-flex  gap-4 align-items-center"
-                style={{
-                  padding: "20px",
-                }}
-              >
-                <img className="" src={item.imgTreino} alt="" />
+          <div className="pps">
+            <div className="container-mini">
+              <img
+                className="ftperfil"
+                src={user.photoURL}
+                alt={user.displayName}
+              />
+              <h3 className="text-center fs-5">{user.displayName}</h3>
+            </div>
+            <div className="container-menor">
+              <h2>Seus treinos</h2>
+              {treinos.map((item) => (
+                <div
+                  key={item.id}
+                  className="d-flex rounded-pill border border-3 border-warning-subtle   align-items-center"
+                  style={{
+                    padding: "15px",
+                    marginBottom: "15px",
+                  }}
+                >
+                  <img className="" src={item.imgTreino} alt="" />
 
-                <div>
-                  <h3>{item.tituloTreino}</h3>
+                  <div>
+                    <h3>{item.tituloTreino}</h3>
 
-                  <p>{item.musculo}</p>
+                    {/* <p>{item.musculo}</p> */}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
           <div></div>
         </div>
