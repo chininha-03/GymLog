@@ -110,17 +110,17 @@ const CadastroInfo = () => {
           <img src="https://placehold.co/309x683" alt="" className="col-3 col-lg-3 col-md-6 col-sm-6" />
           <div className="formMaster-CadInfo">
             <form className="col-6 col-lg-6 col-md-4 col-sm-3">
-              <label class="inputbox-CadInfo">
+              <label className="inputbox-CadInfo">
                 <InputAltura />
               </label>
               <br />
               <br />
-              <label class="inputbox-CadInfo">
+              <label className="inputbox-CadInfo">
                 <Inputpeso />
               </label>
               <br />
               <br />
-              <label class="inputbox-CadInfo">
+              <label className="inputbox-CadInfo">
                 <InputIdade />
                 <p id="mensagem"></p>
               </label>

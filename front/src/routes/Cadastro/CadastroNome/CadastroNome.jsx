@@ -11,7 +11,7 @@ const CadastroNome = () => {
       <div className="cadNome-master">
         <div className="cardNameFt">
           <div className="roda-Fto">
-            <i class="bi bi-person-add"></i>
+            <i className="bi bi-person-add"></i>
           </div>
           <h1>Nome:</h1>
           <div className="cardinpt">

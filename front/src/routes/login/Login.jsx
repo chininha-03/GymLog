@@ -102,7 +102,7 @@
 //                   onClick={handleLogin}
 //                   className="btn btn-outline-secondary m-2"
 //                 >
-//                   <i class="bi bi-google "></i>
+//                   <i className="bi bi-google "></i>
 //                   <a href="#" className="ps-4 fw-semibold">
 //                     Login com Google
 //                   </a>
@@ -480,7 +480,7 @@ const Login = () => {
             </button>
 
             <Link to="/singin" className="mt-5">
-              <button type="button" class="btn btn-outline-primary w-100">
+              <button type="button" className="btn btn-outline-primary w-100">
                 Criar Conta
               </button>
             </Link>

@@ -66,15 +66,15 @@ const SingIn = () => {
             />
             <span>Confirmar Senha</span>
           </label>
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="checkbox"
               value=""
               id="invalidCheck2"
               required
             />
-            <label class="form-check-label" for="invalidCheck2">
+            <label className="form-check-label" for="invalidCheck2">
               Concordar com os termos e condições
             </label>
           </div>

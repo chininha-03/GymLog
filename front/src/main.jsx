@@ -109,7 +109,7 @@ const router = createBrowserRouter([
       { path: "/configuracoes", element: <Configuracoes /> },
       //configurações
       { path: "/configuracoes", element: <Configuracoes /> },
-      { path: "/confPerfil", element: <ConfigPerfil /> },
+      // { path: "/confPerfil", element: <ConfigPerfil /> },
 
     ],
   },

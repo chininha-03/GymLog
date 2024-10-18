@@ -34,7 +34,7 @@ const CadastroAtv = () => {
           <div className="sex rotate-vert-center-2">
             <button className="sexFem">
               <Link to={"/cadAtiv"}>
-                <i class="bi bi-gender-female"></i>
+                <i className="bi bi-gender-female"></i>
                 <h3>Feminino</h3>
               </Link>
             </button>

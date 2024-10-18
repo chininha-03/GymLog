@@ -120,9 +120,9 @@ const Treino = () => {
                   ))}
                 </div>
                 <div className="envi">
-                  <i class="bi bi-hand-thumbs-up"></i>
-                  <i class="bi bi-share"></i>
-                  <i class="bi bi-chat"></i>
+                  <i className="bi bi-hand-thumbs-up"></i>
+                  <i className="bi bi-share"></i>
+                  <i className="bi bi-chat"></i>
                 </div>
               </div>
             </div>
