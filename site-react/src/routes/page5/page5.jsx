@@ -1,6 +1,7 @@
 import "./page5.css";
 import logo from "../../../public/img/logo.png";
 import Footer from "../../components/Footer/footer";
+import AcadFoto2 from "../../assets/man-5886571_640.jpg"
 
 
 const Page5 = () => {
@@ -9,7 +10,7 @@ const Page5 = () => {
       {" "}
       <div className="cont">
         <div className="in">
-          <img src="https://placehold.co/478x478" alt="" />
+          <img src={AcadFoto2} alt="" />
           <div className="info">
             <h2>Vamos com a<br/>B&W!</h2>
             <h3>Revolucionar o seu ambiente de<br/> &nbsp treino!</h3>

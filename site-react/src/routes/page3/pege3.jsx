@@ -6,7 +6,7 @@ import mulherAcademia from "../../assets/mulherAcademia.jpg";
 
 const Page3 = () => {
   return (
-    <div className="masterAntes d-block ">
+    <div className="masterAntes d-block">
       <div className="logooo">
         <img src={logo} alt="Logo GymLog" />
       </div>
