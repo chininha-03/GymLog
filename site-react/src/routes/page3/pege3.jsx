@@ -6,15 +6,14 @@ import mulherAcademia from "../../assets/mulherAcademia.jpg";
 
 const Page3 = () => {
   return (
-    <div className="masterAntes">
+    <div className="masterAntes d-block ">
       <div className="logooo">
         <img src={logo} alt="Logo GymLog" />
-
       </div>
       <div className="divMaster">
         <img src={mulherAcademia} alt="Imagem de mulher fazendo academia" />
         {/* <div className="iconsSetas">
->>>>>>> origin/main
+          >>>>>>> origin/main
           <a href="#">
           <i className="bi bi-chevron-left"></i>
           </a>
